@@ -1,0 +1,130 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>用户管理</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<script language="javascript" type="text/javascript">
+  function del(){
+  var box = document.getElementsByName("checkbox");
+  var boxvalue = new Array();
+  for(i=0; i<box.length; i++)
+  {
+  if(box[i].checked)
+  boxvalue[i] = box[i].value;
+  }
+  if(boxvalue.length<=0)
+  alert("请选择要删除的记录");
+  else
+   if(confirm("确认删除吗？"))
+   window.location.reload();
+  }
+</script>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：用户管理</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table align="center" class="table-form">
+          <tr>
+            <td colspan="7" class="table-title"> 用户查询</td>
+          <tr>
+            <td width="10%" class="table-list_title">工号</td>
+            <td><input name="textfield2" type="text" class="input"></td>
+            <td width="10%" class="table-list_title">姓名</td>
+            <td><input name="textfield23" type="text" class="input"></td>
+            <td width="10%" class="table-list_title">性别</td>
+            <td>
+              <select name="select">
+                <option>男</option>
+                <option>女</option>
+              </select>
+            </td>
+            <td rowspan="2"><span class="table-button"> <input type="button" value="查询" name="B33" class="input" onClick="location.href('#')"></span></td>
+          </tr>
+          <tr>
+            <td class="table-list_title">职位</td>
+            <td>
+              <select name="select">
+                <option>AR管理员</option>
+                <option>CE管理员</option>
+                <option>传输管理员</option>
+                <option>申请员</option>
+              </select>
+            </td>
+            <td class="table-list_title">部门</td>
+            <td><input name="textfield24" type="text" class="input"></td>
+            <td class="table-list_title">&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button"> <input type="button" value="添加" name="B332" class="input" onClick="location.href('user_manage_add.html')"> <input type="button" value="修改" name="B333" class="input" onClick="location.href('user_manage_update.html')"> <input type="button" value="删除" name="B334" class="input" onClick="location.href('javascript:del();')"> </td>
+          </tr>
+        </table>
+        <table align="center" class="table-table">
+          <tr>
+            <td colspan="6" class="table-title"> 基本信息</td>
+          <tr>
+            <td class="table-title1">&nbsp;</td>
+            <td class="table-title1">工号</td>
+            <td class="table-title1">姓名</td>
+            <td class="table-title1">性别</td>
+            <td class="table-title1">职位</td>
+            <td class="table-title1">部门</td>
+          </tr>
+          <tr>
+            <td align="center"><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>1001</td>
+            <td>刘萌</td>
+            <td>男</td>
+            <td>AR管理员</td>
+            <td>网络管理中心</td>
+          </tr>
+          <tr>
+            <td align="center"><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>1002</td>
+            <td>刘义</td>
+            <td>男</td>
+            <td>CE管理员</td>
+            <td>网络管理中心</td>
+          </tr>
+          <tr>
+            <td align="center"><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>1003</td>
+            <td>徐兵</td>
+            <td>男</td>
+            <td>申请员</td>
+            <td>工程建设中心</td>
+          </tr>
+          <tr>
+            <td align="center"><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>1004</td>
+            <td>张鹏</td>
+            <td>男</td>
+            <td>传输管理员</td>
+            <td>网络管理中心</td>
+          </tr>
+        </table>
+        <table width="96%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="right" bgcolor="#FFFFFF"> 共1条记录 <a href="#">首页</a> | <a href="#">上一页</a> | <a href="#">下一页</a> | <a href="#">尾页</a>
+              <select name="_page">
+                <option value="1" selected="selected">1/2</option>
+                <option value="2">2/2</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+<script type="text/javascript">var Ptr=document.getElementsByTagName("tr");function recolor() {for (i=1;i<Ptr.length+1;i++) {Ptr[i-1].className = (i%2>0)?"t1":"t2";}}window.onload=recolor;for(var i=0;i<Ptr.length;i++) {Ptr[i].onmouseover=function(){this.tmpClass=this.className;this.className = "t3";};Ptr[i].onmouseout=function(){this.className=this.tmpClass;};}</script>

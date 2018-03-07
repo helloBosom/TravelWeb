@@ -1,0 +1,151 @@
+@charset "utf-8";
+/* CSS Document */
+/* 旅游线路 */
+.main{ width:960px; margin:auto; padding-top:15px;}
+.main_left{ width:220px; float:left;}
+.ny_left_lvxl{ width:220px; background:#fff; padding-bottom:10px;}
+.ny_left_lvxl_top{ width:210px; background-image:url(../images/mddfl_bg2.jpg); height:31px; line-height:31px; font-size:15px; color:#fff; font-family:"微软雅黑"; padding-left:10px; }
+
+.ny_left_lvxl_fl{   padding-top:2px; padding-left:20px;}
+.ny_left_lvxl_fl ul li{ background:url(../images/nr_left1.jpg) no-repeat left center; padding-left:45px; height:25px; padding-top:18px; margin-top:10px; font-weight:bold;}
+/*.ny_left_lvxl_fl ul li{ background:url(../images/nr_left1.jpg) no-repeat 10px 9px; padding-left:35px; border-bottom:1px solid #e5d5c2; height:32px; line-height:32px; }*/
+.main_jdtj{ width:220px; height:300px; background:#fff; margin-top:15px;}
+.cgh_tp{ margin-top:15px; height:252px; font-size:18px; color:#fe7100;  font-family:"方正大黑简体"; line-height:35px;}
+.cgh_tp img{ padding:1px; border:1px solid #e0e0e0;}
+.main_right{ float:right; width:725px;}
+/* 旅游线路 */
+.ny_left_lxwm{ width:220px; background:#fff; margin-top:15px; padding-bottom:10px;}
+.ny_left_lxwm_nr{ line-height:24px; padding-left:15px; padding-right:5px;}
+
+/*左侧QQ*/
+.ny_left_lxwm_qq{ height:50px; padding-left:15px; padding-right:5px; margin-top:5px; }
+.ny_left_lxwm_qq ul li{ float:left; }
+.ny_left_lxwm_qq ul li p{ margin:0px; padding:0px;}
+
+/* 精品线路 */
+.ny_jpxl{ width:220px; background:#fff; margin-top:15px; padding-bottom:10px;}
+.ny_jpxl_top{ width:220px; background:url(../images/qzbl_t1.jpg) no-repeat; height:3px;}
+.ny_jpxl_bt{height:27px;  border:1px solid #e6f1e2; background:url(../images/xay_top_bg1.jpg) repeat-x; width:220px;}
+.ny_jpxl_bt ul li{ line-height:27px;   padding-left:10px; font-size:15px; font-family:"微软雅黑";}
+.ny_jpxl_bt ul li span{ float:right; padding-right:5px; font-size:12px;}
+.ny_jpxl_nr_list{ padding-left:5px;}
+.ny_jpxl_nr_list ul li{ background:url(../images/xay_nr_l2.jpg) no-repeat 15px 15px; padding-left:25px; line-height:35px; border-bottom:1px dashed #e8e8e8;}
+/* 精品线路 */
+
+/* 线路列表*/
+
+.ny_lylb{float:right; width:722px; border:1px solid  #dfdfdf; background:#fff; }
+
+
+.ny_lylb_top{ height:27px;  border-top:3px solid #0b95ff; background:url(../images/xay_top_bg1.jpg) repeat-x;}
+.ny_lylb_top ul li{ line-height:27px; background:url(../images/xay_tl3.jpg) center left no-repeat; margin-left:7px; padding-left:15px; font-size:15px; font-family:"微软雅黑";}
+.ny_lylb_top ul li span{ float:right; padding-right:8px; font-size:12px;}
+.ny_lylb_nr{ padding:10px;}
+.ny_lylb_nr_lb{  padding-top:10px; padding-bottom:7px; border-bottom:1px dashed #e8e8e8;}
+.ny_lylb_nr_lb_img{ float:left; width:130px; height:100px; padding:1px; border:1px solid #f0f0f0;}
+.ny_lylb_nr_lb_img img{ width:130px; height:100px;}
+.ny_lylb_nr_lb_wz{ width:560px; float:right; line-height:22px; color:#666666;}
+.ny_lylb_nr_lb_wz a{ color:#000}
+.ny_lylb_nr_lb_list{ padding-left:5px;}
+.ny_lylb_nr_lb_list ul li{ background:url(../images/xay_nr_l2.jpg) no-repeat left center; padding-left:10px; line-height:24px;}
+.ny_lylb_nr_lb_list ul li span{ float:right; padding-right:5px; color:#ff729f;}
+.ny_lylb_nr_lb_wz_yd{ width:120px; height:32px; line-height:32px; text-align:center; font-size:15px; font-family:"微软雅黑"; color:#FFFFFF; font-weight:bold; background:#ff6800; float:right; margin-top:5px; margin-right:5px;}
+.ny_lylb_nr_lb_wz_yd a{ color:#FFFFFF;}
+.ny_lylb_nr_lb_wz_bt{color:#000; font-weight:bold}
+.ny_lylb_nr_lb_wz_bt span{ float:right; color:#cc0010; padding-right:5px; font-weight:100;}
+.ny_lylb_nr_lb_wz_bt span a{  color:#cc0010; font-weight:100;}
+/* 线路列表*/
+
+/* 线路内容*/
+.ny_lynr_nr_lb{  padding-top:10px; padding-bottom:7px; border-bottom:1px dashed #e8e8e8;}
+.ny_lynr_nr_lb_img{ float:left; width:200px; height:150px; padding:1px; border:1px solid #f0f0f0;}
+.ny_lynr_nr_lb_img img{ width:200px; height:150px;}
+.ny_lynr_nr_lb_wz{ width:480px; float:right; line-height:30px;}
+.ny_lynr_nr_lb_wz a{ color:#cc0010}
+.ny_lynr_nr_lb_list{ padding-left:5px;}
+.ny_lynr_nr_lb_list ul li{ background:url(../images/xay_nr_l2.jpg) no-repeat left center; padding-left:10px; line-height:24px;}
+.ny_lynr_nr_lb_list ul li span{ float:right; padding-right:5px; color:#ff729f;}
+.ny_lynr_nr_lb_wz_yd{ width:120px; height:32px; line-height:32px; text-align:center; font-size:15px; font-family:"微软雅黑"; color:#FFFFFF; font-weight:bold; background:#ff6800; float:right; margin-top:5px; margin-right:5px;}
+.ny_lynr_nr_lb_wz_bt{color:#000; font-weight:bold}
+.ny_lynr_nr_lb_wz_bt span{ float:right; color:#cc0010; padding-right:5px; font-weight:100;}
+.ny_lynr_nr_lb_wz_bt span a{  color:#cc0010; font-weight:100;}
+
+.ny_lynr_xcts{ margin-top:15px;}
+.ny_lynr_xcts_top{ height:27px;   background:url(../images/ny_nr_ti.jpg) repeat-x; border-top:3px solid #e6568a;}
+.ny_lynr_xcts_top ul li{ line-height:27px; background:url(../images/xay_tl2.jpg) center left no-repeat; margin-left:7px; padding-left:15px; font-size:15px; font-family:"微软雅黑";}
+.ny_lynr_xcts_top ul li span{ float:right; padding-right:8px; font-size:12px;}
+.ny_lynr_xcts_nr{ padding:10px; line-height:25px; border-bottom:1px dashed #e8e8e8; padding-bottom:10px;}
+.ny_lynr_xcts_nr td{ text-align:center; padding:5px;}
+
+
+
+
+/* 线路内容*/
+.ny_lynr_xcap{ margin-top:15px;}
+.ny_lynr_xcap_nr{ padding:10px; line-height:22px; border-bottom:1px dashed #e8e8e8; padding-bottom:5px;}
+.ny_lynr_xcap_nr ul li{ height:auto; border-bottom:1px solid #e8e8e8; padding:10px;}
+.ny_lynr_xcap_nr ul li a{ line-height:20px;}
+.ny_lynr_xcap_nr img{ width:150px; height:150px;}
+.ny_lynr_xcap_nr table{ width:680px;}
+td{border:1px solid #d1d1d1; align:center;}
+/*table {width:680px;}
+table td{border:1px solid #d1d1d1;align:center; cellpadding:0; cellspacing:0; bordercolor:#d1d1d1; border-collapse:collapse;}
+*/
+.ny_jdny_nr_lb_img{ width:300px; height:200px; float:left;}
+.ny_jdny_nr_lb_img img{width:300px; height:200px; }
+.ny_jdnr_nr_lb_wz{ width:380px; float:right; line-height:30px;}
+
+.ny_lynr_nr_lb td{ padding:5px; line-height:22px;}
+
+/**签证**/
+.xay_qzbl_nr_list{ padding-left:5px;}
+.xay_qzbl_nr_list ul li{ background:url(../images/xay_nr_l3.jpg) no-repeat left center; padding-left:10px; line-height:30px; border-bottom:1px dashed #d1d1d1;}
+.xay_qzbl_nr_list ul li span{ float:right; padding-right:5px; }
+/**签证**/
+.ny_m_r_bt1{ height:30px; line-height:30px; text-align:center; font-weight:bold;  margin-top:10px; font-size:15px;}
+.ny_m_r_bt2{ height:30px; line-height:30px; margin-top:5px;  text-align:center; border-bottom:1px dashed #d1d1d1; border-top:1px dashed #d1d1d1;}
+.ny_jdyd_img_lb{ width:170px; height:160px; line-height:20px; text-align:center; float:left; padding-left:5px; padding-right:0px; margin-bottom:10px;}
+.ny_jdyd_img_lb img{ width:160px; height:130px;}
+
+
+.ny_syh_img{ width:702px; height:236px; margin-bottom:10px;}
+.ny_syh_img img{ width:702px; height:236px;}
+
+/**世园会报价**/
+.xay_qdsyh_nr_list{ padding-left:5px;}
+.xay_qdsyh_nr_list ul li{ background:url(../images/xay_nr_l2.jpg) no-repeat left center; padding-left:10px; line-height:30px; border-bottom:1px dashed #d1d1d1;}
+.xay_qdsyh_nr_list ul li span{ float:right; padding-right:5px; }
+
+.ny_lylb_nr .turn{ width:702px; height:236px; overflow:hidden; position:relative;}
+.ny_lylb_nr .turn #adpica{ width:702px; height:236px; overflow:hidden; text-align:center;  border:1px solid #dcdcdc; padding:1px;}
+.ny_lylb_nr .turn #adpica img{ width:702px; height:236px; }
+
+.ny_lylb_nr .turn #adtipa{height:22px; position:absolute; right:2px;  bottom:0px;}
+.ny_lylb_nr .turn #adtipa ul li{width:21px;height:20px; line-height:20px; float:left;text-align:center;display:inline; cursor:pointer;color:#333; border:1px solid #cccccc; background:#f9f9f9; font-size:13px}
+.ny_lylb_nr .turn #adtipa ul li.current{color:#fff; background:#ff6600;}
+.ny_lylb_nr .turn .hidden{display:none;}
+.ny_lylb_nr .turn .show{display:block!important;}
+.ny_lylb_nr .turn .hidden img {width:702px; height:236px;}
+.ny_lylb_nr .turn .show img {width:702px; height:236px;}
+
+
+
+/**世园会报价**/
+
+
+/*分页*/
+.page{clear:both;padding:10px 10px 20px 10px; text-align:right;}
+.page a {font-size:12px; line-height:12px;color:#666; padding:3px 6px; margin-right:5px; border:1px solid #a7b0b8; background-color:#f9fafb; text-align:center; white-space:nowrap; display:inline; font-family:simsun; text-decoration:none}
+.page .curr,.page a:hover {background-color:#ff6a06;color:#fff;}
+/*分页*/
+
+/*page table satrt*/
+.border_t_l_r_01{border-top: #cccccc 1px solid;border-left: #cccccc 1px solid;border-right: #cccccc 1px solid;}
+.border_t_b_l_r_01{border-top: #cccccc 1px solid;border-bottom: #cccccc 1px solid;border-left: #cccccc 1px solid;border-right: #cccccc 1px solid;}
+.border_t_r_01{border-top: #cccccc 1px solid;border-right: #cccccc 1px solid;}
+.border_t_b_r_01{border-top: #cccccc 1px solid;border-bottom: #cccccc 1px solid;border-right: #cccccc 1px solid;}
+
+
+#header_li1{background:url(../images/sc.jpg) no-repeat center left; padding-left:18px;}
+#header_li2{background:url(../images/lx.jpg) no-repeat center left; padding-left:17px;}
+#header_li3{background:url(../images/pz.jpg) no-repeat center left; padding-left:20px;}

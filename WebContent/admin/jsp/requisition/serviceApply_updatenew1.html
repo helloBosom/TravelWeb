@@ -1,0 +1,215 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>业务系统申请表</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../../css/grid.css" rel="stylesheet" type="text/css">
+  <script src="../../js/web.js"></script>
+  <script language="javascript" type="text/javascript" src="../../js/datepicker/WdatePicker.js"></script>
+  <link href="../../js/datepicker/default/datepicker.css" rel="stylesheet" type="text/css">
+  <link href="../../js/datepicker/whyGreen/datepicker.css" rel="stylesheet" type="text/css" disabled>
+</head>
+<script language="JavaScript">
+function initEnddate(obj)
+	{
+		var a = new Date();
+		var n_month,n_date;
+		if( a.getMonth() + 1<10 )
+		  {	n_month = "0"+(a.getMonth() + 1);
+		  		//alert (n_month);
+		  }
+		 else{
+		 	n_month = a.getMonth() + 1;
+		 }
+		 if ( a.getDate()<10  )
+		  {
+			   n_date = "0"+ a.getDate();
+			   //alert (n_date);
+		  }
+		  else{
+		  	 n_date = a.getDate();
+		  } 
+		
+		var b=a.getFullYear() + "-" + n_month + "-" + n_date;
+		//var b=a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate();
+		//document.write(a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate());
+		document.all(obj).value=b;
+	}
+
+	</script>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：订单详细信息表</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"> 订单详细 </td>
+          </tr>
+        </table>
+      <table  id="table0" align="center" class="table-form">
+          <tr>
+            <td width="10%" class="table-list_title">申请单编号</td>
+            <td>IPNET2008041001</td>
+            <td width="10%" class="table-list_title">申请人</td>
+            <td>徐兵</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">申请单类型</td>
+            <td>门店</td>
+            <td class="table-list_title">负责人联系方式</td>
+            <td>15869365022</td>
+          </tr>
+          <tr>
+            <td height="22" class="table-list_title">申请单名称</td>
+            <td>IPNET2008052201 
+            </td>
+            <td class="table-list_title">申请时间</td>
+            <td> <input name="text" type="text" class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true)" value="2008-04-21"> </td>
+          </tr>
+        </table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button"> 
+			<input type="button" value="修改网元信息" name="B332" class="long" onClick="showModelessDialog('service_update.html', '1','dialogWidth=850px,dialogHeight=120px,resizable=1')">  <input type="button" onClick="location.href('#')" class="long"  style="widows:80px "value="删除网元信息"/></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td align="left"> 付款详细</td>
+          </tr>
+        </table>
+							
+
+        <table  id="table1" align="center" class="table-table">
+          <tr>
+		  <td align=center class="table-title1">选择</td>
+            <td align=center class="table-title1">网元名称</td>
+			<td align=center class="table-title1">所在地市</td>
+			<td align=center class="table-title1">设备所在机房</td>
+			<td align=center class="table-title1">网元厂家</td>
+			<td align=center class="table-title1">网元类型</td>
+			<td align=center class="table-title1">业务容量</td>
+			</tr>
+			<tr>					
+
+          <td> <input type="checkbox"/></td>
+             <td>ZHKGM4</td>
+			 <td>许昌</td> <td>东城区新生产楼三楼机房</td> <td>诺西</td> <td>MGW</td> <td>35万</td> 
+          </tr>					
+        
+        </table>
+		
+		
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button">  <input type="button" onClick="showModelessDialog('IP_update.html', '1','dialogWidth=850px,dialogHeight=80px,resizable=1')" class="long"  style="widows:80px "value="修改IP信息"/>  <input type="button" onClick="location.href('#')" class="long"  style="widows:80px "value="删除IP信息"/></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td align="left"> 业务系统IP信息</td>
+          </tr>
+        </table>
+		
+        <table  id="table1" align="center" class="table-table">
+          <tr>
+		  <td align=center class="table-title1">选择</td>
+            <td align=center class="table-title1">网元名称</td>
+			<td align=center class="table-title1">业务地址类型</td>
+			<td align=center class="table-title1">业务地址说明</td>
+			<td align=center class="table-title1">拟接入CE</td>
+			<td align=center class="table-title1">业务地址段分配</td>
+			<td align=center class="table-title1">VLAN 信息</td>
+			<td align=center class="table-title1">业务网关地址</td>
+			</tr>
+			<tr>
+          <td> <input type="checkbox"/></td>
+             <td>ZHKGM4</td>
+			 <td>信令</td> <td>XCHGM4_CP1</td> <td>XCHSC1</td> <td>10.94.177.0/27</td> <td>1041</td> <td>10.94.177.1</td>
+          </tr>					
+<tr>
+          <td> <input type="checkbox"/></td>
+             <td>ZHKGM5</td>
+			 <td>媒体</td> <td>IPNIU</td> <td>XCHSC1</td> <td>10.93.97.248/29</td> <td>1041</td> <td>10.93.97.249</td>
+          </tr>
+        
+        </table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button"> <input type="button" value="修改端口" name="B332" class="long" onClick="showModelessDialog('servicePort_update.html', '1','dialogWidth=850px,dialogHeight=120px,resizable=1')">    <input type="button" onClick="location.href('#')" class="long"  style="widows:80px "value="删除端口"/></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td align="left"> 业务系统端口信息</td>
+          </tr>
+        </table>
+						
+
+        <table  id="table1" align="center" class="table-table">
+          <tr>
+		  <td align=center class="table-title1">选择</td>
+            <td align=center class="table-title1">网元名称</td>
+			<td align=center class="table-title1">本端端口描述</td>
+			<td align=center class="table-title1">端口类型</td>
+			<td align=center class="table-title1">端口模式</td>
+			<td align=center class="table-title1">拟接入CE</td>
+			<td align=center class="table-title1">端口分配</td>
+			</tr>
+			<tr>
+          <td> <input type="checkbox"/></td>
+             <td>ZHKGM4</td>
+			 <td>XCHGM4_ESA_1-FE1/1/1</td> <td>FE</td> <td>100M/FULL</td> <td>XCHSC1</td> <td>GE 8/0/2</td> 
+          </tr>
+        <tr>
+          <td> <input type="checkbox"/></td>
+             <td>ZHKGM4</td>
+			 <td>XCHGM4_ESA_1-FE1/1/2</td> <td>FE</td> <td>100M/FULL</td> <td>XCHSC2</td> <td>GE 8/0/2</td> 
+          </tr>
+        </table>
+		
+       
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="30%" class="pizhu">说明：其中带<span class="red">*</span>号为必填项</td>
+            <td height="30" style="padding-right:300px;" class="table-button"> <input type="button" value="提交" name="B333" class="input" onClick="location.href('serviceApply_list.html')"> <input type="button" value="重置" name="B332" class="input" onClick="location.href('#')">  <input type="button" value="返回" name="B333" class="input" onClick="javascript:history.back()"> </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+<script language="JavaScript"> 
+<!-- 
+
+function hve_display(t_id,i_id){//显示隐藏程序 
+var t_id;//表格ID 
+var i_id;//图片ID 
+var on_img="2308.gif";//打开时图片 
+var off_img="2305.gif";//隐藏时图片 
+if (t_id.style.display == "none") {//如果为隐藏状态 
+t_id.style.display="";//切换为显示状态 
+//i_id.src=on_img;
+}//换图 
+else{//否则 
+t_id.style.display="none";//切换为隐藏状态 
+//i_id.src=off_img;
+}//换图 
+} 
+
+
+
+//--> 
+</script>
+</html>

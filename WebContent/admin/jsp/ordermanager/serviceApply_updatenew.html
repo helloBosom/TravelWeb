@@ -1,0 +1,211 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>订单详情</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../../css/grid.css" rel="stylesheet" type="text/css">
+  <script src="../../js/web.js"></script>
+  <script language="javascript" type="text/javascript" src="../../js/datepicker/WdatePicker.js"></script>
+  <link href="../../js/datepicker/default/datepicker.css" rel="stylesheet" type="text/css">
+  <link href="../../js/datepicker/whyGreen/datepicker.css" rel="stylesheet" type="text/css" disabled>
+</head>
+<script language="JavaScript">
+function initEnddate(obj)
+	{
+		var a = new Date();
+		var n_month,n_date;
+		if( a.getMonth() + 1<10 )
+		  {	n_month = "0"+(a.getMonth() + 1);
+		  		//alert (n_month);
+		  }
+		 else{
+		 	n_month = a.getMonth() + 1;
+		 }
+		 if ( a.getDate()<10  )
+		  {
+			   n_date = "0"+ a.getDate();
+			   //alert (n_date);
+		  }
+		  else{
+		  	 n_date = a.getDate();
+		  } 
+		
+		var b=a.getFullYear() + "-" + n_month + "-" + n_date;
+		//var b=a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate();
+		//document.write(a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate());
+		document.all(obj).value=b;
+	}
+
+	</script>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：订单详细信息表</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"> 订单详细 </td>
+          </tr>
+        </table>
+            <table  id="table0" align="center" class="table-form">
+          <tr>
+            <td width="10%" class="table-list_title">申请单编号</td>
+            <td>IPNET2008041001</td>
+            <td width="10%" class="table-list_title">申请人</td>
+            <td>徐兵</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">申请单类型</td>
+            <td>门店</td>
+            <td class="table-list_title">负责人联系方式</td>
+            <td>15869365022</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">申请单名称</td>
+            <td>IPNET2008052201 
+            </td>
+            <td class="table-list_title">申请时间</td>
+            <td> <input name="text" type="text" class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true)" value="2008-04-21"> </td>
+          </tr>
+        </table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button"> 
+			<input type="button" value="修改付费" name="B332" class="long" onClick="showModelessDialog('service_update.html', '1','dialogWidth=850px,dialogHeight=120px,resizable=1')">  <input type="button" onClick="location.href('#')" class="long"  style="widows:80px "value="删除付费"/></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td align="left"> 付款详细</td>
+          </tr>
+        </table>
+							
+
+        <table  id="table1" align="center" class="table-table">
+          <tr>
+		  <td align=center class="table-title1">选择</td>
+            <td align=center class="table-title1">付款方式</td>
+			<td align=center class="table-title1">付款金额</td>
+			<td align=center class="table-title1">接受人</td>
+			<td align=center class="table-title1">备注</td>
+			
+			</tr>
+			<tr>					
+
+          <td> <input type="checkbox"/></td>
+             <td>ZHKGM4</td>
+			 <td>许昌</td> <td>东城区新生产楼三楼机房</td> <td>35万</td> 
+          </tr>					
+        
+        </table>
+		
+		
+		
+		
+		
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button">  <input type="button" onClick="showModelessDialog('IP_update.html', '1','dialogWidth=850px,dialogHeight=80px,resizable=1')" class="long"  style="widows:80px "value="修改护照信息"/>  <input type="button" onClick="location.href('#')" class="long"  style="widows:80px "value="删除护照信息"/></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td align="left"> 护照详情</td>
+          </tr>
+        </table>
+		
+        <table  id="table1" align="center" class="table-table">
+          <tr>
+		  <td align=center class="table-title1">选择</td>
+            <td align=center class="table-title1">姓名</td>
+			<td align=center class="table-title1">编号</td>
+			<td align=center class="table-title1">证据类型</td>
+			
+			</tr>
+			<tr>
+          <td> <input type="checkbox"/></td>
+             <td>ZHKGM4</td>
+			 <td>信令</td> <td>XCHGM4_CP1</td> 
+          </tr>					
+<tr>
+          <td> <input type="checkbox"/></td>
+             <td>ZHKGM5</td>
+			 <td>媒体</td> <td>IPNIU</td> 
+          </tr>
+        
+        </table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button"> <input type="button" value="修改用户信息" name="B332" class="long" onClick="showModelessDialog('servicePort_update.html', '1','dialogWidth=850px,dialogHeight=120px,resizable=1')">    <input type="button" onClick="location.href('#')" class="long"  style="widows:80px "value="删除用户信息"/></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td align="left">客户详细信息</td>
+          </tr>
+        </table>
+						
+
+        <table  id="table1" align="center" class="table-table">
+          <tr>
+		  <td align=center class="table-title1">选择</td>
+            <td align=center class="table-title1">用户名</td>
+			<td align=center class="table-title1">身份证号</td>
+			<td align=center class="table-title1">年龄</td>
+			<td align=center class="table-title1">性别</td>
+			<td align=center class="table-title1">出生日期</td>
+			<td align=center class="table-title1">工作</td>
+			</tr>
+			<tr>
+          <td> <input type="checkbox"/></td>
+             <td>ZHKGM4</td>
+			 <td>XCHGM4_ESA_1-FE1/1/1</td> <td>FE</td> <td>100M/FULL</td> <td>XCHSC1</td> <td>GE 8/0/2</td> 
+          </tr>
+       
+        </table>
+		
+       
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="30%" class="pizhu">说明：其中带<span class="red">*</span>号为必填项</td>
+            <td height="30" style="padding-right:300px;" class="table-button">
+             <input type="button" value="提交" name="B333" class="input"  onClick="window.location='order_audit_list.html';"> 
+             <input type="button" value="重置" name="B332" class="input"  onClick="window.location='order_audit_list.html';">  
+             <input type="button" value="返回" name="B333" class="input"  onClick="window.location='order_audit_list.html';"> 
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+<script language="JavaScript"> 
+<!-- 
+
+function hve_display(t_id,i_id){//显示隐藏程序 
+var t_id;//表格ID 
+var i_id;//图片ID 
+var on_img="2308.gif";//打开时图片 
+var off_img="2305.gif";//隐藏时图片 
+if (t_id.style.display == "none") {//如果为隐藏状态 
+t_id.style.display="";//切换为显示状态 
+//i_id.src=on_img;
+}//换图 
+else{//否则 
+t_id.style.display="none";//切换为隐藏状态 
+//i_id.src=off_img;
+}//换图 
+} 
+
+
+
+//--> 
+</script>
+</html>

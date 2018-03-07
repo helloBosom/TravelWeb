@@ -1,0 +1,83 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>旅游主题管理</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：旅游主题管理</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table align="center" class="table-form">
+          <tr>
+            <td colspan="3" class="table-title"> 主题查询</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">主题名称</td>
+            <td><input name="textfield2" type="text" class="input"></td>
+            <td><span class="table-button"><input type="button" value="查询" name="B33" class="input" onClick="window.location='traveltopic_search.html';"> </span></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button">
+			<input type="button" value="添加" name="B332" class="input" onClick="window.location='traveltopic_add.html';">
+																		<!--  onclick="window.location='http://www.ddung.org'';" -->
+			<input type="button" value="删除" name="B334" class="input" onClick="window.location='#';"></td>
+          </tr>
+        </table>
+        <table align="center" class="table-table">
+          <tr>
+            <td colspan="7" class="table-title">主题信息</td>
+          </tr>
+          <tr>
+            <td width="5%" class="table-title1">选择</td>
+            <td class="table-title1">主题名称</td>
+            <td class="table-title1">详细</td>
+            <td width="5%" class="table-title1">序号</td>
+            <td class="table-title1">操作</td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="checkbox" value="checkbox"></td>
+            <td>蜜月旅行</td>
+            <td><a href="traveltopic_search.html">详细信息</a></td>
+            <td>1</td>
+            <td><a href="traveltopic_update.html">修改</a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="checkbox2" value="checkbox"></td>
+            <td>世界奇观</td>
+            <td><a href="traveltopic_search.html">详细信息</a></td>
+            <td>2</td>
+            <td><a href="traveltopic_update.html">修改</a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="checkbox3" value="checkbox"></td>
+            <td>休闲度假</td>
+            <td><a href="traveltopic_search.html">详细信息</a></td>
+            <td>3</td>
+            <td><a href="traveltopic_update.html">修改</a></td>
+          </tr>
+        </table>
+        <table width="96%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="right" bgcolor="#FFFFFF"> 共1条记录 <a href="#">首页</a> | <a href="#">上一页</a> | <a href="#">下一页</a> | <a href="#">尾页</a>
+              <select name="_page">
+                <option value="1" selected="selected">1/2</option>
+                <option value="2">2/2</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+<script type="text/javascript">var Ptr=document.getElementsByTagName("tr");function recolor() {for (i=1;i<Ptr.length+1;i++) {Ptr[i-1].className = (i%2>0)?"t1":"t2";}}window.onload=recolor;for(var i=0;i<Ptr.length;i++) {Ptr[i].onmouseover=function(){this.tmpClass=this.className;this.className = "t3";};Ptr[i].onmouseout=function(){this.className=this.tmpClass;};}</script>
+</html>

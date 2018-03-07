@@ -1,0 +1,217 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>AR申请表</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<script language="javascript" type="text/javascript" src="../../js/datepicker/WdatePicker.js"></script>
+<link href="../../js/datepicker/default/datepicker.css" rel="stylesheet" type="text/css">
+  <link href="../../js/datepicker/whyGreen/datepicker.css" rel="stylesheet" type="text/css" disabled="disabled">
+  <script language="javascript" type="text/javascript">
+  function del(){
+  var box = document.getElementsByName("checkbox");
+  var boxvalue = new Array();
+  for(i=0; i<box.length; i++)
+  {
+  if(box[i].checked)
+  boxvalue[i] = box[i].value;
+  }
+  if(boxvalue.length<=0)
+  alert("请选择要删除的记录");
+  else
+   if(confirm("确认删除吗？"))
+   window.location.reload();
+  }
+</script>
+  <script language="JavaScript">
+    function fnCheck() {	
+        if( fnCheckTime())		
+		document.forms[0].submit();
+    }
+	
+	
+	function initStardate(obj)
+	{		
+		//距离当天时间7天前的日期
+		var a = new Date();
+		a = a.valueOf();		
+		a = a - 7 * 24 * 60 * 60 * 1000;
+		a = new Date(a);
+		//alert(a);
+		//alert(a.getFullYear() + "年" + (a.getMonth() + 1) + "月" + a.getDate() + "日");
+		var n_month,n_date;
+		if( a.getMonth() + 1<10 )
+		  {	n_month = "0"+(a.getMonth() + 1);
+		  		//alert (n_month);
+		  }
+		 else{
+		 	n_month = a.getMonth() + 1;
+		 }
+		 if ( a.getDate()<10  )
+		  {
+			   n_date = "0"+ a.getDate();
+			  // alert (n_date);
+		  }
+		  else{
+		  	 n_date = a.getDate();
+		  } 
+		
+		var b=a.getFullYear() + "-" + n_month + "-" + n_date;
+		document.all(obj).value=b;
+	}
+	function initEnddate(obj)
+	{
+		var a = new Date();
+		var n_month,n_date;
+		if( a.getMonth() + 1<10 )
+		  {	n_month = "0"+(a.getMonth() + 1);
+		  		//alert (n_month);
+		  }
+		 else{
+		 	n_month = a.getMonth() + 1;
+		 }
+		 if ( a.getDate()<10  )
+		  {
+			   n_date = "0"+ a.getDate();
+			   //alert (n_date);
+		  }
+		  else{
+		  	 n_date = a.getDate();
+		  } 
+		
+		var b=a.getFullYear() + "-" + n_month + "-" + n_date;
+		//var b=a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate();
+		//document.write(a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate());
+		document.all(obj).value=b;
+	}
+	</script>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：AR申请表</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table align="center" class="table-form">
+          <tr>
+            <td colspan="12" class="table-title"> AR申请表查询</td>
+          <tr>
+            <td class="table-list_title">申请单编号</td>
+            <td> <input name="textfield2" type="text" class="input"> </td>
+            <td class="table-list_title">申请单名称</td>
+            <td> <input name="textfield23" type="text" class="input"> </td>
+            <td class="table-list_title">申请人</td>
+            <td> <input name="textfield23" type="text" class="input"> </td>
+            <td rowspan="3" class="table-button"> <input type="button" value="查询" name="B33" class="input" onClick="location.href('#')"> </td>
+          </tr>
+          <tr>
+            <td class="table-list_title">网络类型</td>
+            <td>
+              <select name="sel" class="common-select">
+                <option>省网接入层</option>
+              </select>
+            </td>
+            <td class="table-list_title">开始时间</td>
+            <td> <input name="text" type="text" class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true)"> </td>
+            <td class="table-list_title">结束时间</td>
+            <td> <input name="text" type="text" class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true)"> </td>
+          </tr>
+          <tr>
+            <td class="table-list_title">紧急情况</td>
+            <td>
+              <select name="sel" class="common-select">
+                <option>紧急</option>
+                <option>一般</option>
+              </select>
+            </td>
+            <td class="table-list_title">申请单状态</td>
+            <td>
+              <select name="select" class="common-select">
+                <option selected>申请人修改</option>
+                <option>审批</option>
+              </select>
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button"> <input type="button" value="导入" name="B334" class="input" onClick="location.href('input.html')"> <input type="button" value="添加" name="B332" class="input" onClick="location.href('arApply_add.html')"> <input type="button" value="删除" name="B334" class="input" onClick="javascript:del();"> </td>
+          </tr>
+        </table>
+        <table align="center" class="table-table">
+          <tr>
+            <td colspan="13" class="table-title"> 基本信息</td>
+          <tr>
+            <td class="table-title1">选择</td>
+            <td class="table-title1">申请单编号</td>
+            <td class="table-title1">申请单名称</td>
+            <td class="table-title1">申请人</td>
+            <td class="table-title1">申请时间</td>
+            <td class="table-title1">紧急情况</td>
+            <td class="table-title1">网络类型</td>
+            <td class="table-title1">状态</td>
+            <td class="table-title1">操作</td>
+            <td class="table-title1">确认单</td>
+            <td class="table-title1">上报单</td>
+          </tr>
+          <tr>
+            <td align="center"> <input type="checkbox" name="checkbox" value="checkbox"> </td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">IPNET2008040901</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">AR申请单</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">徐兵</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">2008-04-09</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">紧急</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">省网接入层</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">审批</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center"> <input type="checkbox" name="checkbox" value="checkbox"> </td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">IPNET2008041001</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">AR申请单</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">徐兵</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">2008-04-10</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">一般</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">省网接入层</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">审批</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center"> <input type="checkbox" name="checkbox" value="checkbox"> </td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">IPNET2008041003</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">AR申请单</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">徐兵</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">2008-04-10</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">紧急</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">省网接入层</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('AR/lineBalance_display2.html')">审批</td>
+            <td>&nbsp;</td>
+            <td><a href="../resource_manage/yewu_edit.html">确认单</a></td>
+            <td><a href="../resource_manage/shenpi_edit.html">上报单</a></td>
+          </tr>
+        </table>
+        <table width="96%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="right" bgcolor="#FFFFFF"> 共1条记录 <a href="#">首页</a> | <a href="#">上一页</a> | <a href="#">下一页</a> | <a href="#">尾页</a>
+              <select name="_page">
+                <option value="1" selected="selected">1/2</option>
+                <option value="2">2/2</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+<script type="text/javascript">var Ptr=document.getElementsByTagName("tr");function recolor() {for (i=1;i<Ptr.length+1;i++) {Ptr[i-1].className = (i%2>0)?"t1":"t2";}}window.onload=recolor;for(var i=0;i<Ptr.length;i++) {Ptr[i].onmouseover=function(){this.tmpClass=this.className;this.className = "t3";};Ptr[i].onmouseout=function(){this.className=this.tmpClass;};}</script>

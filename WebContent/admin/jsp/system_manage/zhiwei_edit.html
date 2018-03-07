@@ -1,0 +1,49 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>职位管理</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：职位管理</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table align="center" class="table-form">
+          <tr>
+            <td colspan="5" class="table-title"> 职位修改</td>
+          <tr>
+            <td class="table-list_title">所在机构</td>
+            <td><input name="textfield22" type="text" class="input" value="工程建设中心"><span class="red">*</span></td>
+            <td class="table-list_title">职位名称</td>
+            <td><input name="textfield24" type="text" class="input" value="申请员"><span class="red">*</span></td>
+          </tr>
+          <tr>
+            <td width="10%" class="table-list_title">职位类型</td>
+            <td>
+              <select name="select" class="input">
+                <option>正职</option>
+                <option>副职</option>
+                <option selected>一般工作人员</option>
+              </select>
+            </td>
+            <td width="10%" class="table-list_title">职位描述</td>
+            <td><input name="textfield23" type="text" class="input" value="一般工作人员"></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="30%" class="pizhu" bgcolor="#FFFFFF">说明：其中带<span class="red">*</span>号为必填项</td>
+            <td height="30" style="padding-right:300px;" class="table-button" bgcolor="#FFFFFF"><input type="button" value="提交" name="B333" class="input" onClick="location.href('zhiwei_manage.html')"> <input type="button" value="重置" name="B332" class="input" onClick="location.href('#')"> </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+<script type="text/javascript">var Ptr=document.getElementsByTagName("tr");function recolor() {for (i=1;i<Ptr.length+1;i++) {Ptr[i-1].className = (i%2>0)?"t1":"t2";}}window.onload=recolor;for(var i=0;i<Ptr.length;i++) {Ptr[i].onmouseover=function(){this.tmpClass=this.className;this.className = "t3";};Ptr[i].onmouseout=function(){this.className=this.tmpClass;};}</script>

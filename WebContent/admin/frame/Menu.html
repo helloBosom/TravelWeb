@@ -1,0 +1,180 @@
+<html>
+<head>
+<title>环球风情分销平台</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="../css/tree.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="../js/frame/xtree.js"></script>
+    <script type="text/javascript" src="../js/frame/frame.js"></script>
+</head>
+
+<body>
+	  	<table border="0">
+    <tr>
+        <td nowrap>
+
+            <script type="text/javascript">
+                /*一级菜单*/
+                var rootTree = new WebFXTree('环球风情分销平台');
+
+                /*二级菜单*/
+                var folder1 = new WebFXTreeItem('基础数据', null, null, null, true);
+				rootTree.add(folder1); 
+
+              var folder2 = new WebFXTreeItem('线路管理', null, null, null, true);
+				rootTree.add(folder2); 
+
+                var folder3 = new WebFXTreeItem('产品管理', null, null, null, true);
+				rootTree.add(folder3); 
+				
+
+           		var folder4 = new WebFXTreeItem('团期管理', null, null, null, true);
+				rootTree.add(folder4); 
+				
+				var folder5 = new WebFXTreeItem('用户评价管理', null, null, null, true);
+					rootTree.add(folder5); 
+				/**
+                var folder5 = new WebFXTreeItem('资源核查比对', null, null, null, true);
+				rootTree.add(folder5);
+				
+   var folder5 = new WebFXTreeItem('AR管理', null, null, null, true);
+				rootTree.add(folder5);*/
+				var folder6 = new WebFXTreeItem('订单管理', null, null, null, true);
+				rootTree.add(folder6);
+				
+/**
+				var folder7 = new WebFXTreeItem('资源统计',"javascript:toURL('资源统计','../jsp/resource_stat/ziyuantongji.html')");
+				rootTree.add(folder7); 
+				
+				var folder8 = new WebFXTreeItem('接口管理',null, null, null, true);
+				rootTree.add(folder8); 
+				
+				var folder9 = new WebFXTreeItem('分销商管理',null, null, null, true);
+				rootTree.add(folder9); */
+				
+				var folder10 = new WebFXTreeItem('权限管理',null, null, null, true);
+				rootTree.add(folder10); 
+
+                /*基础数据 三级菜单*/
+                var item1_0 = new WebFXTreeItem("门市管理", "javascript:toURL('门市管理','../jsp/dictonaary/equipmentMold_list.html')");
+                folder1.add(item1_0);
+                 var item1_1 = new WebFXTreeItem("目的地管理", "javascript:toURL('目的地管理','../jsp/dictonaary/equipmentType_list.html')");
+                folder1.add(item1_1);
+                var item1_2 = new WebFXTreeItem("旅游主题管理", "javascript:toURL('旅游主题管理','/travel-wyt/theme/queryall.do')");
+                folder1.add(item1_2);					
+                var item1_3 = new WebFXTreeItem("分销商管理", "javascript:toURL('分销商管理','../jsp/dictonaary/cardType_list.html')");
+                folder1.add(item1_3);				
+                var item1_4 = new WebFXTreeItem("模块管理", "javascript:toURL('模块管理','../jsp/dictonaary/portType_list.html')");
+                folder1.add(item1_4);
+                var item1_5 = new WebFXTreeItem("景区管理", "javascript:toURL('景区管理','/travelweb/viewspacemanage.do')");
+                folder1.add(item1_5);
+                var item1_5_0=new WebFXTreeItem("添加景区","javascript:toURL('添加景区','../jsp/viewManeger/addviewspace.jsp')");
+                item1_5.add(item1_5_0);
+                var item1_5_1=new WebFXTreeItem("修改景区","javascript:toURL('修改景区','../jsp/viewManeger/updateviewspace.jsp')");
+                item1_5.add(item1_5_1);
+                /* var item1_6 = new WebFXTreeItem("景点管理", "javascript:toURL('景点管理','../jsp/viewManeger/viewpointmanage.html')");
+                folder1.add(item1_6); */
+                /* var item1_6_0=new WebFXTreeItem("添加景点","javascript:toURL('添加景点','../jsp/viewManeger/addviewpoint.html')");
+                item1_6.add(item1_6_0);
+                var item1_6_1=new WebFXTreeItem("修改景点","javascript:toURL('修改景点','../jsp/viewManeger/updateviewpoint.html')");
+                item1_6.add(item1_6_1);
+ */
+				
+                /*var item1_5 = new WebFXTreeItem("业务系统", "javascript:toURL('业务系统','../jsp/dictonaary/service_list.html')");
+                folder1.add(item1_5);
+                var item1_6 = new WebFXTreeItem("地市信息", "javascript:toURL('地市信息','../jsp/dictonaary/cityInfo_list.html')");
+                folder1.add(item1_6);
+                var item1_7 = new WebFXTreeItem("IP地址资源规划", "javascript:toURL('IP地址资源规划','../jsp/dictonaary/IPResourcePlan_list.html')");
+                folder1.add(item1_7);
+                var item1_8 = new WebFXTreeItem("设备管理地址分配", "javascript:toURL('设备管理地址分配','../jsp/dictonaary/equipmentManage_list.html')");
+                folder1.add(item1_8);
+				var item1_9 = new WebFXTreeItem("设备局址管理", "javascript:toURL('设备局址管理','../jsp/dictonaary/jifangManageList.html')");
+                folder1.add(item1_9);
+				var item1_10 = new WebFXTreeItem("光模块类型管理", "javascript:toURL('光模块类型管理','../jsp/dictonaary/lightTypeList.html')");
+                folder1.add(item1_10);*/
+				
+                /*资源维护 三级菜单*/
+				var item2_1 = new WebFXTreeItem("查询线路", "javascript:toURL('查询线路','../jsp/routedate/route_list.html')");
+                folder2.add(item2_1);
+				var item2_2 = new WebFXTreeItem("发布线路", "javascript:toURL('发布线路','../jsp/routedate/route_add.html')");
+                folder2.add(item2_2);
+                var item2_3 = new WebFXTreeItem("修改线路", "javascript:toURL('修改线路','../jsp/routedate/route_update.html')");
+                folder2.add(item2_3);
+                
+				/*					
+                var item2_4 = new WebFXTreeItem("AR管理", "javascript:toURL('AR管理','../jsp/resource_maintenance/arApply_list.html')");
+                folder2.add(item2_4);	*/			
+
+
+                /*申请表 三级菜单*/
+				var item1_1 = new WebFXTreeItem("查询产品","javascript:toURL('查询产品','/travelweb/product/findbypage.do')");
+                folder3.add(item1_1);
+                var item1_2 = new WebFXTreeItem("发布产品","javascript:toURL('发布产品','/travelweb/product/queryroutename.do')");
+                folder3.add(item1_2);
+               				
+                
+               
+			    var item4_1 = new WebFXTreeItem("查询团期","javascript:toURL('查询团期','../jsp/requisition/serviceApply_list2.html')");
+                folder4.add(item4_1);
+			    var item4_2 = new WebFXTreeItem("发布团期","javascript:toURL('发布团期','../jsp/requisition/serviceApply_list.html')");
+                folder4.add(item4_2);	
+                var item4_3 = new WebFXTreeItem("修改团期","javascript:toURL('修改团期','../jsp/requisition/ceApply_list.html')");
+                folder4.add(item4_3);
+				var item4_4 = new WebFXTreeItem("团期报名", "javascript:toURL('团期报名','../jsp/requisition/arApply_list.html')");
+                folder4.add(item4_4);
+                
+                var item5_1 = new WebFXTreeItem("用户评价查询", "javascript:toURL('查询线路','../')");
+                folder5.add(item5_1);
+				var item5_2 = new WebFXTreeItem("回复用户评价", "javascript:toURL('发布线路','../')");
+                folder5.add(item5_2);		
+  <!------------------------===================================---------------------->
+				/*资源查询统计 三级菜单*/
+                var item1_1 = new WebFXTreeItem("查询订单", "javascript:toURL('线路订单查询','../jsp/ordermanager/order_audit_list.html')");
+                folder6.add(item1_1);
+               
+                var item1_2 = new WebFXTreeItem("修改订单", "javascript:toURL('资源查询','../jsp/ordermanager/order_audit_update.html')");
+                folder6.add(item1_2);	
+				// var item1_3 = new WebFXTreeItem("设备视图", "javascript:toURL('设备视图','../jsp/resource_search/shebei_index.html')");
+               // folder6.add(item1_3);	
+				/*var item1_4 = new WebFXTreeItem("版本比较", "javascript:toURL('版本比较','../jsp/resource_search/lineBalanceCheak.html')");
+                folder6.add(item1_4);
+				var item1_5 = new WebFXTreeItem("资源统计", "javascript:toURL('资源统计','../jsp/resource_stat/ziyuantongji.html')");
+                folder6.add(item1_5);*/
+								
+				/*系统管理 三级菜单*/
+                var item1_1 = new WebFXTreeItem("系统管理", null, null, null, true);
+                folder10.add(item1_1);
+				
+                var folder8_1 = new WebFXTreeItem("分配角色", "javascript:toURL('分配角色','../jsp/system_manage/main.html')");
+                item1_1.add(folder8_1);					
+                var folder8_2 = new WebFXTreeItem("分配权限", "javascript:toURL('分配权限','../jsp/system_manage/order_list.html')");
+                item1_1.add(folder8_2);					
+				var folder8_3 = new WebFXTreeItem("职位管理", "javascript:toURL('职位管理','../jsp/system_manage/zhiwei_manage.html')");
+                item1_1.add(folder8_3);	
+								
+/*				var folder8_3 = new WebFXTreeItem("职位代理", "javascript:toURL('职位代理','../jsp/system_manage/work_daili.html')");
+                item1_1.add(folder8_3);					
+                var folder8_4 = new WebFXTreeItem("撤消职位代理", "javascript:toURL('撤消职位代理','../jsp/system_manage/unload_work.html')");
+                item1_1.add(folder8_4);	
+*/				
+				
+				var folder8_5 = new WebFXTreeItem("用户管理", "javascript:toURL('用户管理','../jsp/system_manage/user_manage.html')");
+                item1_1.add(folder8_5);		
+				/*			
+                var folder8_6 = new WebFXTreeItem("组织结构管理", "javascript:toURL('组织结构管理','../jsp/system_manage/jiegou_manage.html')");
+                item1_1.add(folder8_6);	*/
+
+				
+/*              var item1_2 = new WebFXTreeItem("采集配置", "javascript:toURL('采集配置','../jsp/system_manage/index.html')");
+                folder8.add(item1_2);	*/
+					
+                var item1_3 = new WebFXTreeItem("日志管理", "javascript:toURL('日志管理','../jsp/system_manage/logManage_list.html')");
+                folder10.add(item1_3);	
+
+				document.write(rootTree);
+                rootTree.expand();
+            </script>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

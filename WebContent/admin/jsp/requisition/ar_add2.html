@@ -1,0 +1,325 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>团期发布</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../../css/grid.css" rel="stylesheet" type="text/css">
+   <script language="javascript" type="text/javascript" src="../../js/datepicker/WdatePicker.js"></script>
+  <link href="../../js/datepicker/default/datepicker.css" rel="stylesheet" type="text/css">
+  <link href="../../js/datepicker/whyGreen/datepicker.css" rel="stylesheet" type="text/css" disabled>
+  <script type="text/javascript" src="../../js/grid.js"></script>
+</head>
+<script type="text/javascript">
+
+    var date=0;
+     function insertRows1(tablename){   
+	 var myTable=tablename;
+     var newRow=myTable.insertRow();//插入新的一行
+     date++;
+     for(i=0;i<4;i++){//每行共三列
+       var newCell=newRow.insertCell();
+       newCell.align="center";
+         switch(i){
+         case 0:
+           newCell.innerHTML="<input name='text1' type='text' class='Wdate' onFocus='new WdatePicker(this,'%Y-%M-%D',true)'> ";
+           break;
+		    case 1:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' value='' class='input' >";
+           break;
+          case 2:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' value='' class='input' >";
+           break;
+		    case 3:
+           newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+           break;
+		   
+		   }
+		   }
+   }
+
+    function delTableRow1(src){
+      date--;
+	  src.parentElement.deleteRow(src.rowIndex);
+	  
+   }
+
+     function insertRows2(tablename)
+		{  
+		 var myTable=tablename;
+     	 var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<4;i++){//每行共三列
+		   var newCell=newRow.insertCell();
+		   		newCell.align="center";
+			 switch(i){
+				case 0:
+				   newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input'>";
+				   break;
+				case 1:
+				   newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+				   break;
+				case 2:
+				   newCell.innerHTML="<select name='ruirong' class='common-select'><option value='content1' selected>2端口 2.5G POS接口板</option></select>";
+				   break;
+				case 3:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+
+    function insertRows3(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<4;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+		   	 newCell.align="center";
+			 switch(i){
+			case 0:
+               newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+               break;
+			case 1:
+               newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+               break;
+		    case 2:
+               newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+              break;
+			case 3:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+ 
+  function insertRows4(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<3;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+		   	 newCell.align="center";
+			 switch(i){
+			 case 0:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 1:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+			case 2:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+   
+    function insertRows5(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<8;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+		   	 newCell.align="center";
+			 switch(i){
+			 case 0:
+            newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 1:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+           case 2:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		    case 3:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		    case 4:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		   	case 5:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		   	case 6:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		   
+			case 7:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+   
+     function insertRows6(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<22;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+		   	 newCell.align="center";
+			 switch(i){
+		 case 0:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 1:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 2:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+         case 3:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		 case 4:
+           newCell.innerHTML="<select name='ruirong' class='common-select'><option value='content1' selected>POS/sm 1310nm 20Km</option><option value='content2'>GE(mm 850nm 550m LC)</option></select";
+           break;
+		 case 5:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		 case 6:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 7:
+           newCell.innerHTML="<select name='ruirong' class='common-select'><option value='content1' selected>已用</option><option value='content2'>空闲</option></select>";
+           break;
+		 case 8:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 9:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 10:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 11:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 12:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 13:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 14:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 15:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 16:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break; 
+		 case 17:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 18:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 19:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 20:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		 case 21:
+		   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+		   break;
+			   
+			  }
+		   }
+   }
+   
+function hve_display(t_id,i_id){//显示隐藏程序 
+var t_id;//表格ID 
+var i_id;//图片ID 
+var on_img="2308.gif";//打开时图片 
+var off_img="2305.gif";//隐藏时图片 
+if (t_id.style.display == "none") {//如果为隐藏状态 
+t_id.style.display="";//切换为显示状态 
+i_id.src=on_img;}//换图 
+else{//否则 
+t_id.style.display="none";//切换为隐藏状态 
+i_id.src=off_img;}//换图 
+}
+
+</script>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：产品信息添加</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table align="center" class="table-form">
+          <tr>
+            <td colspan="5" class="table-title"> 团期发布</td>
+          <tr>
+            <td width="10%" class="table-list_title">产品编号</td>
+            <td><input name="textfield2" type="text" class="input"><span class="red">*</span></td>
+            <td width="10%" class="table-list_title">产品名称</td>
+            <td><input name="textfield23" type="text" class="input"><span class="red">*</span></td>
+      
+          </tr>
+          <tr>
+            <td class="table-list_title">线路类型</td>
+            <td><select name='select' class='common-select'>
+                <option>普吉岛</option>
+                <option>爱琴海</option>
+              </select></td>
+            <td class="table-list_title">行程天数</td>
+            <td><input name="textfield23" type="text" class="input"></td>
+          </tr>
+          <tr>
+            <td class="table-list_title">产品状态</td>
+            <td><select name='ruirong'  class='common-select'>
+                <option selected>销售中</option>
+                <option>已过期</option>
+              </select></td>
+            <td class="table-list_title">旅游主题</td>
+            <td><select name='select' class='common-select'>
+                <option>蜜月假期</option>
+                <option>健康回春</option>
+                <option>轻度冒险</option>
+                <option>休闲度假</option>
+                <option>学习充电</option>
+                <option>庆典赛事</option>
+              </select></td>
+          </tr>
+        </table>
+       
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="5" align="left"><img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table2,img1)" style="cursor: hand">团期发布 </td>
+          </tr>
+        </table>
+        <table align="center" class="table-form" id="table2" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="table-title1">日期<span class="red">*</span></td>
+            <td class="table-title1">机位</td>
+			  <td class="table-title1">票价</td>
+            <td align="right">
+              <div style="width:120px;"><span class="table-button"><input type="button" onClick="insertRows1(table2)" class="long" value="增加一行"/></span></div>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="30%" class="pizhu">说明：其中带<span class="red">*</span>号为必填项</td>
+            <td height="30" style="padding-right:300px;" class="table-button"> <input type="button" value="提交" name="B333" class="input" onClick="location.href('ar_add.html')"> <input type="button" value="重置" name="B332" class="input" onClick="location.href('#')"> </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

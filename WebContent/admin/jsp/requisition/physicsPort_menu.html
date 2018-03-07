@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>IP专用承载网资源管理平台</title>
+  <link href="../../css/tree1.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="../../js/frame/xtree1.js"></script>
+  <script type="text/javascript" src="../../js/frame/frame1.js"></script>
+</head>
+<body>
+  <table border="0">
+    <tr>
+      <td nowrap>
+        <script type="text/javascript">
+                /*一级菜单*/
+                var rootTree = new WebFXTree('设备物理信息');
+
+                /*二级菜单*/
+                var folder1 = new WebFXTreeItem('1槽位(空闲)',"javascript:toURL('郑州BR1','cardType_list.html')");
+				rootTree.add(folder1); 
+                var folder2 = new WebFXTreeItem('2槽位(空闲)', null, null, null, true);
+				rootTree.add(folder2); 
+                var folder3 = new WebFXTreeItem('3槽位(空闲)', null, null, null, true);
+				rootTree.add(folder3); 
+                var folder4 = new WebFXTreeItem('4槽位(空闲)', null, null, null, true);
+				rootTree.add(folder4); 
+                var folder5 = new WebFXTreeItem('5槽位(空闲)',null,null,null,true);
+				rootTree.add(folder5); 
+				var folder6 = new WebFXTreeItem('6槽位(空闲)',null,null,null,true);
+				rootTree.add(folder6); 
+				var folder7 = new WebFXTreeItem('7槽位(空闲)',null, null, null, true);
+				rootTree.add(folder7); 
+				var folder8 = new WebFXTreeItem('8槽位(空闲)',null, null, null, true);
+				rootTree.add(folder8); 
+				var folder9 = new WebFXTreeItem('9槽位(空闲)',null, null, null, true);
+				rootTree.add(folder9); 
+				var folder10 = new WebFXTreeItem('10槽位(空闲)',null, null, null, true);
+				rootTree.add(folder10); 
+				var folder11 = new WebFXTreeItem('11槽位(空闲)',null, null, null, true);
+				rootTree.add(folder11); 
+				var folder12 = new WebFXTreeItem('12槽位(空闲)',null, null, null, true);
+				rootTree.add(folder12); 
+				var folder13 = new WebFXTreeItem('13槽位(空闲)',null, null, null, true);
+				rootTree.add(folder13); 
+				var folder14 = new WebFXTreeItem('14槽位(空闲)',null, null, null, true);
+				rootTree.add(folder14); 
+				var folder15 = new WebFXTreeItem('15槽位(空闲)',null, null, null, true);
+				rootTree.add(folder15); 
+				var folder16 = new WebFXTreeItem('16槽位(空闲)',null, null, null, true);
+				rootTree.add(folder16); 
+				
+
+				/*郑州 三级菜单*/
+				
+				
+                var item1_1 = new WebFXTreeItem("板卡0(4端口 2.5G POS接口板)", "javascript:toURL('郑州BR1','cardPort_list.html')");
+                folder1.add(item1_1);
+               
+				/*BR四级菜单*/
+				var folder1_1 = new WebFXTreeItem("端口0(POS0/0/0)", "javascript:toURL('郑州BR1','port__update.html')");
+                item1_1.add(folder1_1);	
+var folder1_2 = new WebFXTreeItem("端口1 空闲", null);
+                item1_1.add(folder1_2);	
+var folder1_3 = new WebFXTreeItem("端口2 空闲",null);
+                item1_1.add(folder1_3);	
+var folder1_4 = new WebFXTreeItem("端口3 空闲", null);
+                item1_1.add(folder1_4);	
+			
+				
+				document.write(rootTree);
+                rootTree.expand();
+            </script>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

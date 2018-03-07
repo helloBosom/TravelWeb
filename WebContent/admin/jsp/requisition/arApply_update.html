@@ -1,0 +1,288 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>AR申请表修改</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../../css/grid.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../../js/grid.js"></script>
+  <script src="../../js/web.js"></script>
+</head>
+<script type="text/javascript">
+
+function insertRows1(tab){
+	var newTr5 = tab.insertRow(tab.rows.length);
+	var newTd50 = newTr5.insertCell();
+	newTd50.insertAdjacentHTML("afterBegin","<b>子接口信息</b>");
+	var newTd51 = newTr5.insertCell();
+	newTd51.insertAdjacentHTML("afterBegin","<input type='button' onClick='delTableRow(this.parentElement.parentElement)' class='long' value='删除子接口信息'/>");
+	
+	newTd51.className="table-button";
+	newTd51.align="right";
+	newTd50.colSpan=3;
+
+	var newTr1 = tab.insertRow(tab.rows.length);
+	var newTd10 = newTr1.insertCell();
+	newTd10.insertAdjacentHTML("afterBegin","子接口编号");
+	var newTd11 = newTr1.insertCell(); 
+	newTd11.insertAdjacentHTML("afterBegin","<input type='text' class='input'>");
+	var newTd12 = newTr1.insertCell(); 
+	newTd12.insertAdjacentHTML("afterBegin","接口组编号");
+	var newTd13 = newTr1.insertCell();
+	newTd13.insertAdjacentHTML("afterBegin","<input type='text' class='input'>");
+	
+	newTd10.className="table-list_title";
+	newTd12.className="table-list_title";
+
+	var newTr3 = tab.insertRow(tab.rows.length);
+	var newTd30 = newTr3.insertCell();
+	newTd30.insertAdjacentHTML("afterBegin","子接口号");
+	var newTd31 = newTr3.insertCell(); 
+	newTd31.insertAdjacentHTML("afterBegin","<input name='textfield2214' type='text' class='input'>");
+	var newTd32 = newTr3.insertCell(); 
+	newTd32.insertAdjacentHTML("afterBegin","对端子接口");
+	var newTd33 = newTr3.insertCell();
+	newTd33.insertAdjacentHTML("afterBegin","<input name='textfield227' type='text' class='input'>");
+	newTd30.className="table-list_title";
+	newTd32.className="table-list_title";
+	
+	
+var newTr4 = tab.insertRow(tab.rows.length);
+	var newTd40 = newTr4.insertCell();
+	newTd40.insertAdjacentHTML("afterBegin","子接口号互联说明");
+	var newTd41 = newTr4.insertCell(); 
+	newTd41.insertAdjacentHTML("afterBegin","<input name='textfield2214' type='text' class='input'>");
+	var newTd42 = newTr4.insertCell(); 
+	newTd42.insertAdjacentHTML("afterBegin","子接口号IP地址");
+	var newTd43 = newTr4.insertCell();
+	newTd43.insertAdjacentHTML("afterBegin","<input name='textfield227' type='text' class='input'>");
+	newTd40.className="table-list_title";
+	newTd42.className="table-list_title";
+	
+	var newTr6 = tab.insertRow(tab.rows.length);
+	var newTd60 = newTr6.insertCell();
+	newTd60.insertAdjacentHTML("afterBegin","逻辑接口属性");
+	var newTd61 = newTr6.insertCell(); 
+	newTd61.insertAdjacentHTML("afterBegin","<select class='common-select'> <option>上行</option> <option>下行</option> <option selected='selected'>并行</option></select>");
+	var newTd62 = newTr6.insertCell(); 
+	newTd62.insertAdjacentHTML("afterBegin","");
+	newTd60.className="table-list_title";
+	newTd62.colSpan=2;
+
+	
+}
+
+function delTableRow(src){
+	var tab=src.parentElement;
+	var num=src.rowIndex;
+	
+	for(var i=tab.rows.length-1;i>=num;i--){
+		tab.deleteRow(i);
+	}
+}
+
+    function delTableRow1(src){
+    
+	  src.parentElement.deleteRow(src.rowIndex);
+	  
+   }
+
+
+    function insertRows3(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<5;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+			 switch(i){
+			case 0:
+               newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+               break;
+		   case 1:
+               newCell.innerHTML="<select name='ruirong' class='common-select'><option value='content1' selected>IP-Trunk</option><option>VLANif</option><option>Ether-TRUNK</option></select>";
+              break;
+			 
+			  case 2:
+               newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+              break;
+			   case 3:
+               newCell.innerHTML="<input type='text' name='name' width='30' class='input'onFocus='checkPort();' >";
+              break;
+			case 4:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+ 
+ 
+   
+function hve_display(t_id,i_id){//显示隐藏程序 
+var t_id;//表格ID 
+var i_id;//图片ID 
+var on_img="2308.gif";//打开时图片 
+var off_img="2305.gif";//隐藏时图片 
+if (t_id.style.display == "none") {//如果为隐藏状态 
+t_id.style.display="";//切换为显示状态 
+i_id.src=on_img;}//换图 
+else{//否则 
+t_id.style.display="none";//切换为隐藏状态 
+i_id.src=off_img;}//换图 
+}
+
+function checksbbm()
+{
+document.form1.sbbm.value=document.form1.ds.value+"AR"+document.form1.sbbh1.value;
+}
+function checkNet(){
+document.form1.ipnet.value="86:0371:2211:3020:8098:00";
+}
+
+function checkPort(){
+document.form2.t1.focus();
+showModelessDialog('port.html', '1','dialogWidth=550px,dialogHeight=80px,resizable=1')
+document.form2.tt.value="pos 1/1/1、EF 1/1/0";}
+</script>
+<body>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+	  
+	    <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"> AR申请表信息</td>
+          </tr>
+        </table>
+	   <table  id="myTable1" align="center" class="table-form">
+          <tr>
+            <td width="10%" class="table-list_title">申请单编号</td>
+            <td>IPNET2008041001</td>
+            <td width="10%" class="table-list_title">申请人</td>
+            <td>徐兵</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">申请单类型</td>
+            <td>AR接入需求单</td>
+            <td class="table-list_title">申请人联系方式</td>
+            <td>15869365022</td>
+          </tr>
+		  
+          <tr>
+            <td class="table-list_title">申请单名称</td>
+            <td> <input name="textfield222" type="text" class="input"> <span class="red">*</span></td>
+            <td class="table-list_title">申请时间</td>
+            <td> <input name="text" type="text" class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true)" value="2008-04-21"> </td>
+          </tr>
+          <tr>
+            <td class="table-list_title">紧急情况</td>
+            <td>
+              <select name="select" class="common-select">
+                <option selected>一般</option>
+                <option>紧急</option>
+              </select>
+            </td>
+            <td class="table-list_title">网络类型</td>
+            <td>
+              <select name="select" class="common-select">
+                <option selected>省网接入层</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="table-list_title">设备工期</td>
+            <td>
+             <input type="text" value=""/>
+            </td>
+            <td class="table-list_title">设备入网时间</td>
+            <td> <input name="text1" type="text" class="Wdate" size="20" readonly=""> </td>
+          </tr>
+        </table>
+	  
+	   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">&nbsp;</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button"> <input type="button" value="修改设备及端口" name="B332" class="long" onClick="showModelessDialog('ar_edit.html', '1','dialogWidth=850px,dialogHeight=100px,resizable=1')">  <input type="button" onClick="showModelessDialog('Apply_add_row.html', '1','dialogWidth=850px,dialogHeight=80px,resizable=1')" class="long"  style="widows:80px "value="修改连接"/> <input type="button" value="删除连接" name="B334" class="long" onClick="location.href('#.html')"> </td>
+          </tr>
+        </table>
+	  
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left">AR设备及端口连接信息</td>
+          </tr>
+        </table>
+		
+       <table align="center" class="table-table" id="table4">
+         
+         
+		<td>选择</td>
+		  <td class="table-title1">设备名称</td>
+		
+		  <td class="table-title1">接口组编号</td>
+		  <td class="table-title1">接口组类型</td>
+		  <td class="table-title1">对端设备</td>
+		  <td class="table-title1">子接口编号</td>
+		  <td class="table-title1">物理端口</td>
+		  <td class="table-title1">子接口号</td>
+		  <td class="table-title1">互联说明</td>
+		  <td class="table-title1">IP地址</td>
+		  <td class="table-title1">接口连接属性</td>
+		  
+		</tr>
+		<tr>
+		<td><input type="checkbox" class="checkbox"/></td>
+		<td><a href="ar_add_next.html">HAZK-PA-RT002</a></td>
+		
+		<td>&nbsp;</td>
+		<td>VLANif</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><p>POS 1/1/0</p>
+		  <p>POS 1/1/1</p></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>并行</td>
+		
+		</tr>
+		<tr>
+		<td><input type="checkbox" class="checkbox"/></td>
+		<td><a href="ar_add_next.html">HAZK-PA-RT002</a></td>
+		
+		<td>&nbsp;</td>
+		<td>IP-Trunk</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td><p>POS 1/1/2</p>
+		  <p>POS 1/1/3</p></td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>并行</td>
+		
+		</tr>
+        </table>
+        
+        
+		
+      
+		
+		
+		
+		
+		
+      
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="30%" class="pizhu"></td>
+           <td height="30" class="table-button"> <input type="button" value="提交" name="B333" class="input" onClick="location.href('arApply_list.html')"> <input type="button" value="重置" name="B332" class="input" onClick="location.href('#')"> 
+             <input type="button" value="返回" name="B3332" class="input" onClick="location.href('arApply_list.html')"></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+ 
+</body>
+
+</html>

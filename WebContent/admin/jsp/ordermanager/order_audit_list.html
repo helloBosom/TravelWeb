@@ -1,0 +1,126 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>业务系统申请表</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+  <script language="javascript" type="text/javascript" src="../../js/datepicker/WdatePicker.js"></script>
+  <link href="../../js/datepicker/default/datepicker.css" rel="stylesheet" type="text/css">
+  <link href="../../js/datepicker/whyGreen/datepicker.css" rel="stylesheet" type="text/css" disabled="disabled">
+</head>
+<script language="javascript" type="text/javascript">
+	  function del(){
+		  var box = document.getElementsByName("checkbox");
+		  var boxvalue = new Array();
+		  for(i=0; i<box.length; i++)
+		  {
+		  if(box[i].checked)
+		  boxvalue[i] = box[i].value;
+		  }
+		  if(boxvalue.length<=0)
+		  alert("请选择要删除的记录");
+		  else
+		   if(confirm("确认删除吗？"))
+		   window.location.reload();
+	  }
+	</script>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：查询订单</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">　</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button">
+			
+			</td>
+          </tr>
+        </table>
+        <table align="center" class="table-table">
+          <tr>
+            <td colspan="13" class="table-title"> 基本信息</td>
+          <!-- <tr>
+            <td class="table-title1">订单编号</td>
+            <td><input name="text" type="text" class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true)"></td>
+          </tr> -->
+          <tr>
+            <td class="table-title1">　</td>
+            <td class="table-title1">订单编号</td>
+            <td class="table-title1">订单号</td>
+            <td class="table-title1">产品名称</td>
+            <td class="table-title1">出团日期</td>
+            <td class="table-title1">线路类型</td>
+            <td class="table-title1">人数</td>
+            <td class="table-title1">应付总额（元）</td>
+            <td class="table-title1">未付金额</td>
+             <td class="table-title1">详细</td>
+            <td class="table-title1">状态</td>
+            <td class="table-title1">操作</td>
+         </tr>
+          <tr>
+            <td align="center"> <input type="checkbox" name="checkbox" value="checkbox"> </td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">IPNET2008040901</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">张三</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">曼谷 巴厘岛</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">2008-04-09</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">普吉岛旅游线路</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">20人</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">33880.0</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">12880.0</td>
+               <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')"><a href="order_detail.html">查看</a></td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">未审核</td>
+   		<td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')"><a href="order_audit.html">审核</a></td>
+          </tr>
+          <tr>
+            <td align="center"> <input type="checkbox" name="checkbox" value="checkbox"> </td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">IPNET2008041001</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">李四</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">绝美天堂爱琴海</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">2008-04-10</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">普吉岛旅游线路</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">25人</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">6880.0</td>
+             <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">12880.0</td>
+              <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')"><a href="order_detail.html">查看</a></td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">未审核</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')"><a href="order_audit.html">审核</a></td>
+          </tr>
+          <tr>
+            <td align="center"> <input type="checkbox" name="checkbox" value="checkbox"> </td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">IPNET2008041002</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">张三</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">绝美天堂爱琴海</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">2008-04-10</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">普吉岛旅游线路</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">30人</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">8980.0</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">12880.0</td>
+              <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')"><a href="order_detail.html">查看</a></td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">已审核</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')"><a href="order_audit.html">审核</a></td>
+          </tr>
+        </table>
+        <table width="96%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="right" bgcolor="#FFFFFF"> 共1条记录 <a href="#">首页</a> | <a href="#">上一页</a> | <a href="#">下一页</a> | <a href="#">尾页</a>
+              <select name="_page">
+                <option value="1" selected="selected">1/2</option>
+                <option value="2">2/2</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    
+  </table>
+  
+
+</body>
+</html>
+<script type="text/javascript">var Ptr=document.getElementsByTagName("tr");function recolor() {for (i=1;i<Ptr.length+1;i++) {Ptr[i-1].className = (i%2>0)?"t1":"t2";}}window.onload=recolor;for(var i=0;i<Ptr.length;i++) {Ptr[i].onmouseover=function(){this.tmpClass=this.className;this.className = "t3";};Ptr[i].onmouseout=function(){this.className=this.tmpClass;};}</script>

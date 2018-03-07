@@ -1,0 +1,539 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>CE申请表修改</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../../css/grid.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../../js/grid.js"></script>
+  <script src="../../js/web.js"></script>
+</head>
+<script type="text/javascript">
+
+     function insertRows1(tablename)
+{   var myTable=tablename;
+     var newRow=myTable.insertRow();//插入新的一行
+    
+     for(i=0;i<3;i++){//每行共三列
+       var newCell=newRow.insertCell();
+       newCell.align="center";
+         switch(i){
+         case 0:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 1:
+           newCell.innerHTML="<select name='ruirong'  class='common-select'><option value='content1' selected> 已使用</option><option value='content2'>空闲</option></select>";
+           break;
+        
+		    case 2:
+           newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+           break;
+		   
+		   }
+		   }
+   }
+
+    function delTableRow1(src){
+    
+	  src.parentElement.deleteRow(src.rowIndex);
+	  
+   }
+
+     function insertRows2(tablename)
+		{  
+		 var myTable=tablename;
+     	 var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<4;i++){//每行共三列
+		   var newCell=newRow.insertCell();
+		   		newCell.align="center";
+			 switch(i){
+				case 0:
+				   newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input'>";
+				   break;
+				case 1:
+				   newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+				   break;
+				case 2:
+				   newCell.innerHTML="<select name='ruirong' class='common-select'><option value='content1' selected>2端口 2.5G POS接口板</option></select>";
+				   break;
+				case 3:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+
+    function insertRows3(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<3;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+		   	 newCell.align="center";
+			 switch(i){
+			case 0:
+               newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+               break;
+		   case 1:
+               newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+              break;
+			case 2:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+ 
+  function insertRows4(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<3;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+		   	 newCell.align="center";
+			 switch(i){
+			 case 0:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 1:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+			case 2:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+   
+    function insertRows5(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<8;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+		   	 newCell.align="center";
+			 switch(i){
+			 case 0:
+            newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 1:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+           case 2:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		    case 3:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		    case 4:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		    case 5:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		   	case 6:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+			case 7:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+   
+     function insertRows6(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<21;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+		   	 newCell.align="center";
+			 switch(i){
+		 case 0:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 1:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+        case 2:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		    case 3:
+           newCell.innerHTML="<select name='ruirong' class='common-select'><option value='content1' selected>POS/sm 1310nm 20Km</option><option value='content2'>GE(mm 850nm 550m LC)</option></select>";
+           break;
+		    case 4:
+           newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+           break;
+		    case 5:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 6:
+           newCell.innerHTML="<select name='ruirong' class='common-select'><option value='content1' selected>已用</option><option value='content2'>空闲</option></select>";
+           break;
+		    case 7:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 8:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 9:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 10:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 11:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 12:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 13:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 14:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 15:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break; case 16:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 17:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 18:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		    case 19:
+           newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+           break;
+		   
+			case 20:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+   
+function hve_display(t_id,i_id){//显示隐藏程序 
+var t_id;//表格ID 
+var i_id;//图片ID 
+var on_img="2308.gif";//打开时图片 
+var off_img="2305.gif";//隐藏时图片 
+if (t_id.style.display == "none") {//如果为隐藏状态 
+t_id.style.display="";//切换为显示状态 
+i_id.src=on_img;}//换图 
+else{//否则 
+t_id.style.display="none";//切换为隐藏状态 
+i_id.src=off_img;}//换图 
+}
+
+</script>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：CE申请表</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"> <img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(myTable1,img1)" style="cursor: hand"> 申请表基本信息修改</td>
+          </tr>
+        </table>
+        <table align="center" class="table-form" id="myTable1">
+          <tr>
+            <td class="table-title1">申请单编号</td>
+            <td class="table-title1">申请单名称</td>
+            <td class="table-title1">申请单类型</td>
+            <td class="table-title1">申请人</td>
+            <td class="table-title1">联系方式</td>
+            <td class="table-title1">申请时间</td>
+            <td class="table-title1">紧急情况</td>
+            <td class="table-title1">网络类型</td>
+          </tr>
+          <tr>
+            <td> <input type='text' name='bianhao' class='input' value="IPNET2008041011"> </td>
+            <td> <input type='text' name='bianhao1'  class='input' value="CE需求单"> </td>
+            <td > <input type='text' name='bianhao'  class='input'value="CE接入需求单" > </td>
+            <td> <input type='text' name='bianhao' class='input' value="徐兵"> </td>
+            <td> <input type='text' name='bianhao1' class='input' value="13803839186"> </td>
+            <td> <input type="text" name="endDate" class="input" style="width:80px" value="2008-04-10" readonly> <img title="选择时间" onClick="openCalendar('endDate')" height="10" src="../../images/download.gif" width="9"> <img src="../../images/undo.gif" width="13" height="13" style="cursor:hand " title="清空时间"  onClick="clearValue('endDate');"></td>
+            <td>
+              <select name="sss" class="common-select">
+                <option>紧急</option>
+                <option>一般</option>
+              </select>
+            </td>
+            <td> <input type='text' name='bianhao'  class='input' style="width:80px"  value="省网接入层"> </td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"> <img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(myTable,img1)" style="cursor: hand"> CE设备基本信息修改</td>
+          </tr>
+        </table>
+        <table align="center" class="table-form" id="myTable">
+          <tr>
+            <td class="table-list_title">设备编号<span class="red">*</span></td>
+            <td class="table-list_title">设备名称<span class="red">*</span></td>
+            <td class="table-list_title">设备厂家</td>
+            <td class="table-list_title">设备型号</td>
+            <td class="table-list_title">局址</td>
+            <td class="table-list_title">管理地址</td>
+            <td class="table-list_title">地市</td>
+            <td class="table-list_title" nowrap="nowrap">业务网段</td>
+            <td class="table-list_title" nowrap="nowrap">业务网段说明</td>
+          </tr>
+          <tr>
+            <td> <input type='text' name='bianhao' width='30' class='input' value="1"> </td>
+            <td> <input type='text' name='bianhao' width='30' class='input' value="HAZHK-PS-SX-CE01-NE40E"> </td>
+            <td >
+              <select name='ruirong'  class='common-select'>
+                <option value='content1' selected> 华为</option>
+                <option value='content2'>思科</option>
+                <option value='content3'>阿尔卡特</option>
+              </select>
+            </td>
+            <td>
+              <select name='ruirong' class='common-select'>
+                <option value='content1' selected> NE40E</option>
+                <option value='content2'>NE80E</option>
+                <option value='content3'>NE5000E</option>
+              </select>
+            </td>
+            <td> <input type='text' name='bianhao1' width='30' class='input' value="周口市莲花路街道枢纽楼3层交换机房"> </td>
+            <td> <input type='text' name='bianhao1' width='30' class='input' value="10.96.130.16/10.96.130.29"> </td>
+            <td>
+              <select name='ruirong' class='common-select'>
+                <option value='content1' selected> 郑州</option>
+                <option value='content2'>南阳</option>
+                <option value='content3'>驻马店</option>
+              </select>
+            </td>
+            <td> <input type='text' name='bianhao' width='30' class='input' value=""> </td>
+            <td> <input type='text' name='bianhao' width='30' class='input' value=""> </td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="5" align="left"> <img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table2,img1)" style="cursor: hand"> CE设备槽位信息修改</td>
+          </tr>
+        </table>
+        <table align="center" class="table-form" id="table2">
+          <tr>
+            <td class="table-list_title">槽位编号<span class="red">*</span></td>
+            <td class="table-list_title">槽位使用情况</td>
+            <td  class="table-button" style="text-align:right"> <input type="button" onClick="insertRows1(table2)" class="long" value="增加一行"/> </td>
+          </tr>
+          <tr>
+            <td> <input type="text" name="text" value="1"> </td>
+            <td>
+              <select name='ruirong' class='common-select'>
+                <option value='content1' selected> 已用</option>
+                <option value='content2'>空闲</option>
+              </select>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="5" align="left"> <img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table3,img1)" style="cursor: hand"> CE设备板卡信息修改 </td>
+          </tr>
+        </table>
+        <table align="center" class="table-form" id="table3">
+          <tr>
+            <td class="table-list_title">板卡编号<span class="red">*</span></td>
+            <td class="table-list_title">槽位编号<span class="red">*</span></td>
+            <td class="table-list_title">板卡类型 <span class="red">*</span></td>
+            <td class="table-button" style="text-align:right"> <input type="button" onClick="insertRows2(table3)" class="long" value="增加一行"/> </td>
+          </tr>
+          <tr>
+            <td> <input type="text" name="text" value="1"> </td>
+            <td> <input type="text" name="text" value="1"> </td>
+            <td>
+              <select name='ruirong' class='common-select'>
+                <option value='content1' selected>2端口 2.5G POS接口板</option>
+              </select>
+            </td>
+            <td></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="5" align="left"> <img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table4,img1)" style="cursor: hand"> 接口组信息修改 </td>
+          </tr>
+        </table>
+        <table align="center" class="table-form" id="table4">
+          <tr>
+            <td class="table-list_title">接口组编号<span class="red">*</span></td>
+            <td class="table-list_title">对端设备编号<span class="red">*</span></td>
+            <td class="table-button" style="text-align:right"> <input type="button" onClick="insertRows3(table4)" class="long" value="增加一行"/> </td>
+          </tr>
+          <tr>
+            <td> <input type="text" name="text" value="1"> </td>
+            <td> <input type="text" name="text" value="1"> </td>
+            <td></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="5" align="left"> <img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table6,img1)" style="cursor: hand"> CE设备子接口信息修改 </td>
+          </tr>
+        </table>
+        <table align="center" class="table-form" id="table6">
+          <tr>
+            <td class="table-list_title">子接口编号<span class="red">*</span></td>
+            <td class="table-list_title">接口组编号<span class="red">*</span></td>
+            <td class="table-list_title">子接口号<span class="red">*</span></td>
+            <td class="table-list_title">对端子接口</td>
+            <td class="table-list_title">子接口号互联说明</td>
+            <td class="table-list_title">子接口号IP地址</td>
+            <td class="table-list_title" nowrap="nowrap">逻辑接口属性</td>
+            <td class="table-button" style="text-align:right"> <input type="button" onClick="insertRows5(table6)" class="long" value="增加一行"/> </td>
+          </tr>
+          <tr>
+            <td> <input type="text" name="text" value="1"> </td>
+            <td> <input type="text" name="text" value="1"> </td>
+            <td> <input type="text" name="text" value="100"> </td>
+            <td> <input type="text" name="text" value="10"> </td>
+            <td> <input type="text" name="text" value="郑州BR1-软交换端局媒体BR25"> </td>
+            <td> <input type="text" name="text" value="10.4.198.216/10.4.198.30"> </td>
+            <td> <input type="text" name="text" value="下行端口"> </td>
+            <td></td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="21" align="left"> <img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table7,img1)" style="cursor: hand"> CE设备物理端口信息修改 </td>
+          </tr>
+        </table>
+        <div id="container" class="grid" style="height:150px">
+          <div id="body" class="grid-body" style="height:120px">
+            <table align="center" class="table-form" id="table7">
+              <tr>
+                <td class="title" style="width:100px" nowrap="nowrap">端口编号</td>
+                <td class="title" style="width:100px" nowrap="nowrap">板卡编号</td>
+                <td class="title" style="width:150px" nowrap="nowrap">接口组编号</td>
+                <td class="title" style="width:150px" nowrap="nowrap">端口类型</td>
+                <td class="title" style="width:150px" nowrap="nowrap">对端设备</td>
+                <td class="title" style="width:150px" nowrap="nowrap">电路开通方向</td>
+                <td class="title" style="width:100px" nowrap="nowrap">端口使用情况</td>
+                <td class="title" style="width:150px" nowrap="nowrap">对端端口编号</td>
+                <td class="title" style="width:150px" nowrap="nowrap">电路编号</td>
+                <td class="title" style="width:150px" nowrap="nowrap">传输路由</td>
+                <td class="title" style="width:200px" nowrap="nowrap">物理路由方向(主用平面）</td>
+                <td class="title" style="width:200px" nowrap="nowrap">物理路由方向(备用平面）</td>
+                <td class="title" style="width:200px" nowrap="nowrap">主用路由传输距离(公里)</td>
+                <td class="title" style="width:200px" nowrap="nowrap">备用路由传输距离(公里)</td>
+                <td class="title" style="width:150px" nowrap="nowrap">本端数据ODF编号</td>
+                <td class="title" style="width:150px" nowrap="nowrap">本端传输ODF编号</td>
+                <td class="title" style="width:150px" nowrap="nowrap">本端传输设备端口</td>
+                <td class="title" style="width:150px" nowrap="nowrap">电路开通时间</td>
+                <td class="title" style="width:200px" nowrap="nowrap">端口互联说明</td>
+                <td class="title" style="width:200px" nowrap="nowrap">端口IP地址</td>
+                <td  class="table-button" style="text-align:right"> <input type="button" onClick="insertRows6(table7)" class="long" value="增加一行"/> </td>
+              </tr>
+              <tr>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="1"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="100"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="郑州CE1-软交换端局媒体CE25"> </td>
+                <td>
+                  <select name='ruirong' class='common-select'>
+                    <option value='content1' selected>POS/sm 1310nm 20Km</option>
+                    <option value='content2'>GE(mm 850nm 550m LC)</option>
+                  </select>
+                </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="郑州CE1"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="郑州CE1"> </td>
+                <td>
+                  <select name='ruirong' class='common-select'>
+                    <option value='content1' selected>已用</option>
+                    <option value='content2'>空闲</option>
+                  </select>
+                </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="POS14/0/0"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="郑州CE1-郑州CE1"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="10.1.72.8/10.1.72.30"> </td>
+                <td></td>
+              </tr>
+              <tr>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="2"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="100"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="郑州CE1-软交换端局媒体CE25"> </td>
+                <td>
+                  <select name='ruirong' class='common-select'>
+                    <option value='content1' selected>POS/sm 1310nm 20Km</option>
+                    <option value='content2'>GE(mm 850nm 550m LC)</option>
+                  </select>
+                </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="郑州CE1"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="郑州CE1"> </td>
+                <td>
+                  <select name='ruirong' class='common-select'>
+                    <option value='content1' selected>已用</option>
+                    <option value='content2'>空闲</option>
+                  </select>
+                </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="POS14/0/0"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' > </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="郑州CE1-郑州CE1"> </td>
+                <td> <input type='text' name='bianhao' width='30' class='input' value="10.1.72.8/10.1.72.30"> </td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="30%" class="pizhu">说明：其中带<span class="red">*</span>号为必填项</td>
+            <td height="30" style="padding-right:300px;" class="table-button"> <input type="button" value="提交" name="B333" class="input" onClick="location.href('ceApply_list.html')"> <input type="button" value="重置" name="B332" class="input" onClick="location.href('#')"> <input type="button" value="返回" name="B333" class="input" onClick="location.href('ceApply_list.html')"> </td>
+          </tr>
+        </table>
+        <table width="96%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="right" bgcolor="#FFFFFF"> 共1条记录 <a href="#">首页</a> | <a href="#">上一页</a> | <a href="#">下一页</a> | <a href="#">尾页</a>
+              <select name="_page" style="width:55px">
+                <option value="1" selected="selected">1/2</option>
+                <option value="2">2/2</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>业务系统申请表</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：AR导入</td>
+    </tr>
+  </table>
+  <table class="table-frame">
+    <tr>
+      <td align="left">
+        <!--内容页面begin-->
+        <table class="table-table">
+          <tr>
+            <td colspan="2" class="table-title">导入</td>
+          </tr>
+          <tr>
+            <td width="10%" class="tdbgcolor">选择导入文件：</td>
+            <td class="two-content"> <input type="file" name="file" style="width:80%" onChange="fnCheckFile(file)"> <font color="#FF0000"> *</font></td>
+          </tr>
+          <tr>
+            <td class="tdbgcolor">下载样表：</td>
+            <td><a  href="../../uploadfiles/arApply_detail.xls">AR数据样表</a></td>
+          </tr>
+          <!--	<tr>
+											<td class="tdbgcolor">错误日志：</td>
+											<td><a href="#.html">错误日志</a></td>
+										</tr>
+											<tr>
+												<td class="tdbgcolor"><font color="red">说明：</font></td>
+												<td>如果左键“错误日志”无法下载，请尝试使用“右目标另存为”下载文件。</td>
+											</tr>键-->
+        </table>
+        <table class="table-button">
+          <tr>
+            <td> <input  type="button" name="B1"  value="导入" onClick="location.href('input.html')"> <input type="reset" name="B2" value="重置"> </td>
+          </tr>
+        </table>
+  </table>
+</body>
+</html>

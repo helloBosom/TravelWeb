@@ -1,0 +1,65 @@
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <!-- this link element includes the css definitions that describes the tab pane -->
+  <!--
+<link type="text/css" rel="stylesheet" href="tab.winclassic.css" />
+-->
+  <link id="webfx-tab-style-sheet" type="text/css" rel="stylesheet" href="../../../css/tab.webfx.css"/>
+  <!-- the id is not needed. It is used here to be able to change css file at runtime -->
+  <script type="text/javascript" src="../../../js/tabpane.js"></script>
+</head>
+<link href="../../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../../css/grid.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../../js/grid.js"></script>
+<body>
+  <script type="text/javascript">
+tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ) );
+//tp1.setClassNameTag( "dynamic-tab-pane-control-luna" );
+//alert( 0 )
+</script>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：申请单</td>
+    </tr>
+  </table>
+  <table align="center" id="table0" class="table-table">
+    <tr>
+      <td class="table-title1">申请单编号</td>
+      <td class="table-title1">申请单名称</td>
+      <td class="table-title1">申请单类型</td>
+      <td class="table-title1">申请人</td>
+      <td class="table-title1">联系方式</td>
+      <td class="table-title1">申请时间</td>
+      <td class="table-title1">紧急情况</td>
+      <td class="table-title1">网络类型</td>
+    </tr>
+    <tr>
+      <td>IPNET2008040901</td>
+      <td>AR需求单</td>
+      <td>AR接入需求单</td>
+      <td>徐兵</td>
+      <td>13803839186</td>
+      <td>2008-04-09</td>
+      <td>紧急</td>
+      <td>省网接入层</td>
+    </tr>
+  </table>
+  <div class="tab-pane" id="tabPane1">
+    <div class="tab-page" id="tabPage1">
+      <h2 class="tab">郑州AR1</h2>
+      <iframe src="arApply_detail.html" width="100%" height="800" scrolling="no" frameborder="0"></iframe>
+    </div>
+    <div class="tab-page" id="tabPage2">
+      <h2 class="tab">郑州AR2</h2>
+      <iframe src="arApply_detail.html" width="100%" height="800" scrolling="no" frameborder="0"></iframe>
+    </div>
+  </div>
+  </table>
+	  
+
+
+
+</body>
+</html>

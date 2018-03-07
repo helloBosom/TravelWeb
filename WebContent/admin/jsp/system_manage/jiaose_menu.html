@@ -1,0 +1,550 @@
+<%--
+功能菜菜单页面
+CREATE BY：ZWY
+DATE：2007-06-04
+--%>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>菜单</title>
+  <link href="../../css/tree1.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="../../js/frame/xtree1.js"></script>
+  <script type="text/javascript" src="../../js/frame/frame1.js"></script>
+</head>
+<body topmargin="0" bgcolor="#F4F7FB">
+  <%--加菜单说明：
+菜单按级别加，也即是默认的“我的权限”是一级菜单，其余的菜单都是在这个菜单之下扩展
+菜单名定义：
+二级扩展名Folder 后面按1，2，3。。。。定义
+三级扩展名按1_1，1_2。。。。。。等等定义
+四级扩展名按1_1_1定义
+以下类似
+页面布局也按梯形下排，以示结构的清晰--%>
+  <table border="0">
+    <tr>
+      <td nowrap>
+        <script type="text/javascript">
+	/*一级菜单*/
+	var rootTree1 = new WebFXTree('省公司');
+	/*二级菜单*/
+	var folder1 = new WebFXTreeItem('省公司网络部', null, null, null, true);
+	rootTree1.add(folder1);            
+	var folder2 = new WebFXTreeItem('省公司网管中心', null, null, null, true);
+	rootTree1.add(folder2); 
+	var folder3 = new WebFXTreeItem('郑州分公司', null, null, null, true);
+	rootTree1.add(folder3);  
+	var folder4 = new WebFXTreeItem('安阳分公司', null, null, null, true);
+	rootTree1.add(folder4);
+	var folder5 = new WebFXTreeItem('鹤壁分公司', null, null, null, true);
+	rootTree1.add(folder5);  
+	var folder6 = new WebFXTreeItem('焦作分公司', null, null, null, true);
+	rootTree1.add(folder6);   
+	var folder7 = new WebFXTreeItem('平顶山分公司', null, null, null, true);
+	rootTree1.add(folder7);
+	var folder8 = new WebFXTreeItem('开封分公司', null, null, null, true);
+	rootTree1.add(folder8); 
+	var folder9 = new WebFXTreeItem('漯河分公司', null, null, null, true);
+	rootTree1.add(folder9); 
+	var folder10 = new WebFXTreeItem('洛阳分公司', null, null, null, true);
+	rootTree1.add(folder10);  	
+	var folder11 = new WebFXTreeItem('南阳分公司', null, null, null, true);
+	rootTree1.add(folder11);  			
+	var folder13 = new WebFXTreeItem('濮阳分公司', null, null, null, true);
+	rootTree1.add(folder13);  		
+	var folder14 = new WebFXTreeItem('三门峡分公司', null, null, null, true);
+	rootTree1.add(folder14);  		
+	var folder15 = new WebFXTreeItem('商丘分公司', null, null, null, true);
+	rootTree1.add(folder15);  		
+	var folder16 = new WebFXTreeItem('信阳分公司', null, null, null, true);
+	rootTree1.add(folder16); 	        
+	var folder17 = new WebFXTreeItem('新乡分公司', null, null, null, true);
+	rootTree1.add(folder17); 
+	var folder18 = new WebFXTreeItem('许昌分公司', null, null, null, true);
+	rootTree1.add(folder18); 
+	var folder19 = new WebFXTreeItem('周口分公司', null, null, null, true);
+	rootTree1.add(folder19); 
+	var folder20 = new WebFXTreeItem('驻马店分公司', null, null, null, true);
+	rootTree1.add(folder20); 
+	
+	
+	var folder3_1 = new WebFXTreeItem('郑州分公司网络部', null, null, null, true);
+	folder3.add(folder3_1);
+	
+	var item1_1 = new WebFXTreeItem("郑州网络部监控室")
+	folder3_1.add(item1_1);
+	var item1_2 = new WebFXTreeItem("郑州网络部网优中心")
+	folder3_1.add(item1_2);
+	var item1_3 = new WebFXTreeItem("郑州网络部传输室")
+	folder3_1.add(item1_3);	
+	var item1_4 = new WebFXTreeItem("郑州网络部数据中心")
+	folder3_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("郑州网络部BSC班")
+	folder3_1.add(item1_5);			
+	var item1_6 = new WebFXTreeItem("郑州网络部基站班")
+	folder3_1.add(item1_6);			
+	var item1_7 = new WebFXTreeItem("郑州网络部电力班")
+	folder3_1.add(item1_7);	
+	var item1_8 = new WebFXTreeItem("郑州分公司网络部空调班")
+	folder3_1.add(item1_8);		
+	var item1_9 = new WebFXTreeItem("郑州网络部投诉班")
+	folder3_1.add(item1_9);			
+	
+	var folder4_1 = new WebFXTreeItem('安阳分公司网络部', null, null, null, true);
+	folder4.add(folder4_1);
+
+	var item1_1 = new WebFXTreeItem("安阳网络部运维中心")
+	folder4_1.add(item1_1);
+	var item1_2 = new WebFXTreeItem("安阳网络部网优中心")
+	folder4_1.add(item1_2);
+	var item1_3 = new WebFXTreeItem("安阳网络部基站班")
+	folder4_1.add(item1_3);	
+	var item1_4 = new WebFXTreeItem("安阳网络部电力班")
+	folder4_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("安阳网络部交换班")
+	folder4_1.add(item1_5);		
+	var item1_6 = new WebFXTreeItem("安阳网络部传输班")
+	folder4_1.add(item1_6);		
+	var item1_7 = new WebFXTreeItem("安阳网络部网优班")
+	folder4_1.add(item1_7);	
+	var item1_8 = new WebFXTreeItem("安阳网络部数据班")
+	folder4_1.add(item1_8);		
+	var item1_9 = new WebFXTreeItem("安阳网络部基建班")
+	folder4_1.add(item1_9);		
+	var item1_10 = new WebFXTreeItem("安阳网络部工程班")
+	folder4_1.add(item1_10);		
+	var item1_11 = new WebFXTreeItem("安阳网络部分析班")
+	folder4_1.add(item1_11);	
+	var item1_12 = new WebFXTreeItem("安阳网络部投诉班")
+	folder4_1.add(item1_12);			
+	var item1_13 = new WebFXTreeItem("安阳网络部监控班")
+	folder4_1.add(item1_13);	
+	
+	var folder5_1 = new WebFXTreeItem('鹤壁分公司网络部', null, null, null, true);
+	folder5.add(folder5_1); 
+	var item1_1 = new WebFXTreeItem("鹤壁网络部交换班")
+	folder5_1.add(item1_1);	
+	var item1_2 = new WebFXTreeItem("鹤壁网络部传输班")
+	folder5_1.add(item1_2);		
+	var item1_3 = new WebFXTreeItem("鹤壁网络部工程班")
+	folder5_1.add(item1_3);		
+	var item1_4 = new WebFXTreeItem("鹤壁网络部监控班")
+	folder5_1.add(item1_4);		
+	var item1_5 = new WebFXTreeItem("鹤壁网络部网优班")
+	folder5_1.add(item1_5);			
+	var item1_6 = new WebFXTreeItem("鹤壁网络部基建班")
+	folder5_1.add(item1_6);			
+	var item1_7 = new WebFXTreeItem("鹤壁网络部数据班")
+	folder5_1.add(item1_7);			
+	var item1_8 = new WebFXTreeItem("鹤壁网络部投诉班")
+	folder5_1.add(item1_8);			
+	
+	
+			
+	var folder6_1 = new WebFXTreeItem('焦作分公司网络部', null, null, null, true);
+	folder6.add(folder6_1); 	
+	var item1_1 = new WebFXTreeItem("焦作分公司网络部综合管理员")
+	folder6_1.add(item1_1);
+		
+	var folder6_1_1 = new WebFXTreeItem('焦作网络部运行维护中心', null, null, null, true);
+	folder6_1.add(folder6_1_1); 
+		var item1_1 = new WebFXTreeItem("网络部运行维护中心监控班")
+		folder6_1_1.add(item1_1);	
+		var item1_2 = new WebFXTreeItem("网络部运行维护中心电力班")
+		folder6_1_1.add(item1_2);		
+			
+	var folder6_1_2 = new WebFXTreeItem('焦作网络部网优基站中心', null, null, null, true);
+	folder6_1.add(folder6_1_2); 
+		var item1_1 = new WebFXTreeItem("焦作网络部网优基站中心基建班")
+		folder6_1_2.add(item1_1);	
+		var item1_2 = new WebFXTreeItem("焦作网络部网优基站中心优化班")
+		folder6_1_2.add(item1_2);		
+		var item1_3 = new WebFXTreeItem("焦作网络部网优基站中心工程班")
+		folder6_1_2.add(item1_3);	
+		var item1_4 = new WebFXTreeItem("焦作网络部网优基站中心工程管理员")
+		folder6_1_2.add(item1_4);
+		var item1_5 = new WebFXTreeItem("焦作网络部网优基站中心线路管理员")
+		folder6_1_2.add(item1_5);
+		var item1_6 = new WebFXTreeItem("焦作网络部投诉班")
+		folder6_1_2.add(item1_6);			
+		
+	var folder6_1_3 = new WebFXTreeItem('焦作网络部传输数据中心', null, null, null, true);
+	folder6_1.add(folder6_1_3); 
+	var item1_1 = new WebFXTreeItem("焦作网络部传输班")
+	folder6_1_3.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("焦作网络部运维中心数据班")
+	folder6_1_3.add(item1_2);		
+	var item1_3 = new WebFXTreeItem("焦作网络部线路代维管理员")
+	folder6_1_3.add(item1_3);			
+	
+		
+	
+	var folder7_1 = new WebFXTreeItem('平顶山分公司网络部', null, null, null, true);
+	folder7.add(folder7_1); 	
+
+	var item1_1 = new WebFXTreeItem("平顶山网络部土建中心")
+	folder7_1.add(item1_1);
+	var item1_2 = new WebFXTreeItem("平顶山网络部网优班")
+	folder7_1.add(item1_2);
+	var item1_3 = new WebFXTreeItem("平顶山网络部综合班")
+	folder7_1.add(item1_3);
+	var item1_4 = new WebFXTreeItem("平顶山网络部监控班")
+	folder7_1.add(item1_4);
+	var item1_5 = new WebFXTreeItem("平顶山网络部传输班")
+	folder7_1.add(item1_5);		
+	var item1_6 = new WebFXTreeItem("平顶山网络部基站班")
+	folder7_1.add(item1_6);		
+	var item1_7 = new WebFXTreeItem("平顶山网络部数据班")
+	folder7_1.add(item1_7);	
+	var item1_8 = new WebFXTreeItem("平顶山网络部投诉班")
+	folder7_1.add(item1_8);	
+
+
+
+
+	
+	var folder8_1 = new WebFXTreeItem('开封分公司网络部', null, null, null, true);
+	folder8.add(folder8_1); 
+	
+	var item1_1 = new WebFXTreeItem("开封网络部交换班")
+	folder8_1.add(item1_1);
+	var item1_2 = new WebFXTreeItem("开封网络部传输班")
+	folder8_1.add(item1_2);		
+	var item1_3 = new WebFXTreeItem("开封网络部基站班")
+	folder8_1.add(item1_3);	
+	var item1_4 = new WebFXTreeItem("开封网络部电力班")
+	folder8_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("开封网络部工程班")
+	folder8_1.add(item1_5);		
+	var item1_6 = new WebFXTreeItem("开封网络部网优班")
+	folder8_1.add(item1_6);
+	var item1_7 = new WebFXTreeItem("开封网络部数据班")
+	folder8_1.add(item1_7);	
+	var item1_8 = new WebFXTreeItem("开封网络部投诉班")
+	folder8_1.add(item1_8);	
+	var item1_9 = new WebFXTreeItem("开封网络部监控班")
+	folder8_1.add(item1_8);
+	
+			
+	var folder9_1 = new WebFXTreeItem('漯河分公司网络部', null, null, null, true);
+	folder9.add(folder9_1); 
+		
+	var item1_1 = new WebFXTreeItem("漯河网络部监控班")
+	folder9_1.add(item1_1);
+	var item1_2 = new WebFXTreeItem("漯河网络部网优班")
+	folder9_1.add(item1_2);
+	var item1_3 = new WebFXTreeItem("漯河网络部传输班")
+	folder9_1.add(item1_3);				
+	var item1_4 = new WebFXTreeItem("漯河网络部数据班")
+	folder9_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("漯河网络部电力班")
+	folder9_1.add(item1_5);	
+	var item1_6 = new WebFXTreeItem("漯河网络部基站班")
+	folder9_1.add(item1_6);	
+	var item1_7 = new WebFXTreeItem("漯河网络部投诉班")
+	folder9_1.add(item1_7);				
+			
+	
+	var folder10_1 = new WebFXTreeItem('洛阳分公司网络部', null, null, null, true);
+	folder10.add(folder10_1); 	
+		
+	var folder10_1_1 = new WebFXTreeItem('洛阳网络部网络优化中心', null, null, null, true);
+	folder10_1.add(folder10_1_1);
+	var item1_1 = new WebFXTreeItem("洛阳网络部网优班")
+	folder10_1_1.add(item1_1);
+	var item1_2 = new WebFXTreeItem("洛阳网络部网优班")
+	folder10_1_1.add(item1_2);
+	 		
+	var folder10_1_2 = new WebFXTreeItem('洛阳网络部运维中心', null, null, null, true);
+	folder10_1.add(folder10_1_2); 	
+	var item1_1 = new WebFXTreeItem("洛阳网络部基站班")
+	folder10_1_2.add(item1_1);	
+	var item1_2 = new WebFXTreeItem("洛阳网络部监控班")
+	folder10_1_2.add(item1_2);	
+	var item1_3 = new WebFXTreeItem("洛阳网络部电力班")
+	folder10_1_2.add(item1_3);		
+	var item1_4 = new WebFXTreeItem("洛阳网络部线路代维")
+	folder10_1_2.add(item1_4);			
+		
+	
+	var folder10_1_3 = new WebFXTreeItem('洛阳网络部数据传输中心', null, null, null, true);
+	folder10_1.add(folder10_1_3); 	
+	var item1_1 = new WebFXTreeItem("洛阳网络部数据班")
+	folder10_1_3.add(item1_1);	
+	var item1_2 = new WebFXTreeItem("洛阳网络部传输班")
+	folder10_1_3.add(item1_2);	
+	var item1_3 = new WebFXTreeItem("洛阳网络部线路代维")
+	folder10_1_3.add(item1_3);	
+	
+			
+	var folder11_1 = new WebFXTreeItem('南阳分公司网络部', null, null, null, true);
+	folder11.add(folder11_1); 	
+		
+	var folder11_1_1 = new WebFXTreeItem('南阳网络部运行维护中心', null, null, null, true);
+	folder11_1.add(folder11_1_1); 		
+	var item1_1 = new WebFXTreeItem("南阳网络部监控班")
+	folder11_1_1.add(item1_1);	
+	var item1_1 = new WebFXTreeItem("南阳网络部工程建设中心")
+	folder11_1.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("南阳网络部工程班")
+	folder11_1.add(item1_2);	
+	var item1_3 = new WebFXTreeItem("南阳网络部基站班")
+	folder11_1.add(item1_3);
+	var item1_4 = new WebFXTreeItem("南阳网络部交换班")
+	folder11_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("南阳网络部电力班")
+	folder11_1.add(item1_5);	
+	var item1_6 = new WebFXTreeItem("南阳网络部线路维护班")
+	folder11_1.add(item1_6);	
+	var item1_7 = new WebFXTreeItem("南阳网络部传输班")
+	folder11_1.add(item1_7);		
+	var item1_8 = new WebFXTreeItem("南阳网络部网优班")
+	folder11_1.add(item1_8);		
+				
+	
+	var folder11_1_2 = new WebFXTreeItem('南阳分公司数据传输中心', null, null, null, true);
+	folder11_1.add(folder11_1_2); 	
+		
+	var folder13_1 = new WebFXTreeItem('濮阳分公司网络部', null, null, null, true);
+	folder13.add(folder13_1); 	
+		
+	var folder13_1_1 = new WebFXTreeItem('濮阳网络部运行维护中心', null, null, null, true);
+	folder13_1.add(folder13_1_1); 		
+	
+	var item1_1 = new WebFXTreeItem("濮阳网络部监控班")
+	folder13_1_1.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("濮阳网络部传输班")
+	folder13_1_1.add(item1_2);	
+	var folder13_1_1 = new WebFXTreeItem("濮阳网络部电力班")
+	folder13_1_1.add(item1_3);
+	var item1_4 = new WebFXTreeItem("濮阳网络部基站班")
+	folder13_1_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("濮阳网络部数据班")
+	folder13_1_1.add(item1_5);	
+	
+	var folder13_1_2 = new WebFXTreeItem('濮阳网络部网优工程中心', null, null, null, true);
+	folder13_1.add(folder13_1_2); 	
+	var item1_1 = new WebFXTreeItem("濮阳网络部网优工程中心网优班")
+	folder13_1_2.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("濮阳网络部投诉班")
+	folder13_1_2.add(item1_2);		
+		
+	var folder14_1 = new WebFXTreeItem('三门峡分公司网络部', null, null, null, true);
+	folder14.add(folder14_1); 	
+		
+	var folder14_1_1 = new WebFXTreeItem('三门峡网络部运行维护中心', null, null, null, true);
+	folder14_1.add(folder14_1_1);
+	
+	var item1_1 = new WebFXTreeItem("三门峡交换班")
+	folder14_1_1.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("三门峡传输班")
+	folder14_1_1.add(item1_2);	
+	var folder13_1_1 = new WebFXTreeItem("三门峡数据班")
+	folder14_1_1.add(item1_3);
+	var item1_4 = new WebFXTreeItem("三门峡投诉班")
+	folder14_1_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("三门峡监控班")
+	folder14_1_1.add(item1_5);		
+	
+	 		
+	var folder14_1_2 = new WebFXTreeItem('三门峡网络部网优工程中心', null, null, null, true);
+	folder14_1.add(folder14_1_2); 	
+	var item1_1 = new WebFXTreeItem("三门峡基站班")
+	folder14_1_2.add(item1_1);	
+
+	var folder15_1 = new WebFXTreeItem('商丘分公司网络部', null, null, null, true);
+	folder15.add(folder15_1); 	
+	var folder15_1_1 = new WebFXTreeItem('商丘网络部网络运行维护中心', null, null, null, true);
+	folder15_1.add(folder15_1_1); 	
+	var item1_1 = new WebFXTreeItem("商丘网络部交换班")
+	folder15_1_1.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("商丘网络部电力班")
+	folder15_1_1.add(item1_2);	
+	var folder13_1_1 = new WebFXTreeItem("商丘网络部投诉班")
+	folder15_1_1.add(item1_3);
+	var item1_4 = new WebFXTreeItem("商丘网络部监控班")
+	folder15_1_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("商丘网络部网优班")
+	folder15_1_1.add(item1_5);	
+	var item1_6 = new WebFXTreeItem("商丘网络部基站班")
+	folder15_1_1.add(item1_6);		
+			
+	var folder15_1_2 = new WebFXTreeItem('商丘网络部传输数据中心', null, null, null, true);
+	folder15_1.add(folder15_1_2); 	
+	var item1_1 = new WebFXTreeItem("商丘网络部传输班")
+	folder15_1_2.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("商丘网络部数据班")
+	folder15_1_2.add(item1_2);	
+	
+	
+	
+	
+	var folder16_1 = new WebFXTreeItem('信阳分公司网络部', null, null, null, true);
+	folder16.add(folder16_1); 		
+	
+	var folder16_1_1 = new WebFXTreeItem('信阳网络部运行维护中心', null, null, null, true);
+	folder16_1.add(folder16_1_1); 	
+	
+	var item1_1 = new WebFXTreeItem("信阳网络部交换班")
+	folder16_1_1.add(item1_1);			
+	var item1_2 = new WebFXTreeItem("信阳网络部电力班")
+	folder16_1_1.add(item1_2);		
+	var item1_3 = new WebFXTreeItem("信阳网络部互联互通")
+	folder16_1_1.add(item1_3);	
+	var item1_4 = new WebFXTreeItem("信阳网络部投诉班")
+	folder16_1_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("信阳网络部监控班")
+	folder16_1_1.add(item1_5);	
+	var item1_6 = new WebFXTreeItem("信阳网络部网优班")
+	folder16_1_1.add(item1_6);	
+	var item1_7 = new WebFXTreeItem("信阳网络部基站班")
+	folder16_1_1.add(item1_7);		
+	
+			
+	var folder16_1_2 = new WebFXTreeItem('信阳网络部传输数据中心', null, null, null, true);
+	folder16_1.add(folder16_1_2); 		
+	
+	var item1_1 = new WebFXTreeItem("信阳网络部传输班")
+	folder16_1_2.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("信阳网络部数据班")
+	folder16_1_2.add(item1_2);	
+	
+	
+	
+	var folder17_1 = new WebFXTreeItem('新乡分公司网络部', null, null, null, true);
+	folder17.add(folder17_1); 	
+	var item1_1 = new WebFXTreeItem("新乡网络部传输班")
+	folder17_1.add(item1_1);	
+	var item1_2 = new WebFXTreeItem("新乡网络部交换班")
+	folder17_1.add(item1_2);	
+	var item1_3 = new WebFXTreeItem("新乡网络部网优班")
+	folder17_1.add(item1_3);
+	var item1_4 = new WebFXTreeItem("新乡网络部电力班")
+	folder17_1.add(item1_4);
+	var item1_5 = new WebFXTreeItem("新乡网络部基站班")
+	folder17_1.add(item1_5);
+	var item1_6 = new WebFXTreeItem("新乡网络部工程班")
+	folder17_1.add(item1_6);
+	var item1_7 = new WebFXTreeItem("新乡网络部数据班")
+	folder17_1.add(item1_7);
+	var item1_8 = new WebFXTreeItem("新乡网络部投诉班")
+	folder17_1.add(item1_8);
+	var item1_9 = new WebFXTreeItem("新乡网络部监控班")
+	folder17_1.add(item1_9);	
+						
+			
+	var folder18_1 = new WebFXTreeItem('许昌分公司网络部', null, null, null, true);
+	folder18.add(folder18_1); 
+		
+	var item1_1 = new WebFXTreeItem("许昌网络部交换班")
+	folder18_1.add(item1_1);	
+	var item1_2 = new WebFXTreeItem("许昌网络部基站班")
+	folder18_1.add(item1_2);	
+	var item1_3 = new WebFXTreeItem("许昌网络部网优班")
+	folder18_1.add(item1_3);
+	var item1_4 = new WebFXTreeItem("许昌网络部传输班")
+	folder18_1.add(item1_4);
+	var item1_5 = new WebFXTreeItem("许昌网络部工程班")
+	folder18_1.add(item1_5);
+	var item1_6 = new WebFXTreeItem("许昌网络部数据班")
+	folder18_1.add(item1_6);
+	var item1_7 = new WebFXTreeItem("许昌网络部电力班")
+	folder18_1.add(item1_7);
+	var item1_8 = new WebFXTreeItem("许昌网络部投诉班")
+	folder18_1.add(item1_8);
+	var item1_9 = new WebFXTreeItem("许昌网络部监控班")
+	folder18_1.add(item1_9);	
+		
+		
+		
+		
+		
+	var folder19_1 = new WebFXTreeItem('周口分公司网络部', null, null, null, true);
+	folder19.add(folder19_1); 
+		
+	var folder19_1_1 = new WebFXTreeItem('周口网络部维护中心', null, null, null, true);
+	folder19_1.add(folder19_1_1); 		
+	var item1_1 = new WebFXTreeItem("周口网络部基站班")
+	folder19_1_1.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("周口网络部监控班")
+	folder19_1_1.add(item1_2);	
+	var item1_3 = new WebFXTreeItem("周口网络部电力班")
+	folder19_1_1.add(item1_3);
+	var item1_4 = new WebFXTreeItem("周口网络部基站代维管理")
+	folder19_1_1.add(item1_4);	
+	
+	var folder19_1_2 = new WebFXTreeItem('周口网络部网优中心', null, null, null, true);
+	folder19_1.add(folder19_1_2); 	
+	var item1_1 = new WebFXTreeItem("周口网络部网优班")
+	folder19_1_2.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("周口网络部投诉处理班")
+	folder19_1_2.add(item1_2);	
+	
+	var folder19_1_3 = new WebFXTreeItem('周口网络部数据传输中心', null, null, null, true);
+	folder19_1.add(folder19_1_3); 	
+	var item1_1 = new WebFXTreeItem("周口网络部传输班")
+	folder19_1_3.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("周口网络部数据班")
+	folder19_1_3.add(item1_2);	
+
+
+
+	var folder20_1 = new WebFXTreeItem('驻马店分公司网络部', null, null, null, true);
+	folder20.add(folder20_1); 	
+		
+	var folder20_1_1 = new WebFXTreeItem('网络运行维护中心', null, null, null, true);
+	folder20_1.add(folder20_1_1); 	
+	var item1_1 = new WebFXTreeItem("驻马店网络部监控班")
+	folder20_1_1.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("驻马店网络部基站班")
+	folder20_1_1.add(item1_2);	
+	var folder13_1_1 = new WebFXTreeItem("驻马店网络部电力班")
+	folder20_1_1.add(item1_3);
+	var item1_4 = new WebFXTreeItem("驻马店网络部投诉班")
+	folder20_1_1.add(item1_4);	
+	var item1_5 = new WebFXTreeItem("驻马店网络部交换班")
+	folder20_1_1.add(item1_5);	
+			
+	var folder20_1_2 = new WebFXTreeItem('传输数据中心', null, null, null, true);
+	folder20_1.add(folder20_1_2); 	
+	var item1_1 = new WebFXTreeItem("驻马店网络部数据班")
+	folder20_1_2.add(item1_1);		
+	var item1_2 = new WebFXTreeItem("驻马店网络部传输班")
+	folder20_1_2.add(item1_2);		
+	
+	
+	
+		
+		/*三级菜单*/
+	
+	
+	var item1_1 = new WebFXTreeItem("业务网维护处")
+	folder1.add(item1_1);	
+	var item1_2 = new WebFXTreeItem("基础网网维护处")
+	folder1.add(item1_2);
+	var item1_3 = new WebFXTreeItem("互联互通办公室")
+	folder1.add(item1_3);	
+	
+	var item1_1 = new WebFXTreeItem("网管中心网管室")
+	folder2.add(item1_1);	
+	var item1_2 = new WebFXTreeItem("网管中心传输室")
+	folder2.add(item1_2);	
+	var item1_3 = new WebFXTreeItem("网管中心话务室")
+	folder2.add(item1_3);		
+	var item1_4 = new WebFXTreeItem("网管中心监控室")
+	folder2.add(item1_4);
+	var item1_5 = new WebFXTreeItem("网管中心数据室")
+	folder2.add(item1_5);		
+	var item1_6 = new WebFXTreeItem("网管中心分析室")
+	folder2.add(item1_6);
+	var item1_7 = new WebFXTreeItem("网管中心综合室")
+	folder2.add(item1_7);	
+	var item1_8 = new WebFXTreeItem("网管中心网优室")
+	folder2.add(item1_8);	
+	document.write(rootTree1);
+	rootTree1.expand();
+ </script>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

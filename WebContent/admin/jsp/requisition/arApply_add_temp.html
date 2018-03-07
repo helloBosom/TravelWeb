@@ -1,0 +1,288 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>AR申请表添加</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../../css/grid.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../../js/grid.js"></script>
+  <script src="../../js/web.js"></script>
+</head>
+<script type="text/javascript">
+
+function insertRows1(tab){
+	var newTr5 = tab.insertRow(tab.rows.length);
+	var newTd50 = newTr5.insertCell();
+	newTd50.insertAdjacentHTML("afterBegin","<b>子接口信息</b>");
+	var newTd51 = newTr5.insertCell();
+	newTd51.insertAdjacentHTML("afterBegin","<input type='button' onClick='delTableRow(this.parentElement.parentElement)' class='long' value='删除子接口信息'/>");
+	
+	newTd51.className="table-button";
+	newTd51.align="right";
+	newTd50.colSpan=3;
+
+	var newTr1 = tab.insertRow(tab.rows.length);
+	var newTd10 = newTr1.insertCell();
+	newTd10.insertAdjacentHTML("afterBegin","子接口编号");
+	var newTd11 = newTr1.insertCell(); 
+	newTd11.insertAdjacentHTML("afterBegin","<input type='text' class='input'>");
+	var newTd12 = newTr1.insertCell(); 
+	newTd12.insertAdjacentHTML("afterBegin","接口组编号");
+	var newTd13 = newTr1.insertCell();
+	newTd13.insertAdjacentHTML("afterBegin","<input type='text' class='input'>");
+	
+	newTd10.className="table-list_title";
+	newTd12.className="table-list_title";
+
+	var newTr3 = tab.insertRow(tab.rows.length);
+	var newTd30 = newTr3.insertCell();
+	newTd30.insertAdjacentHTML("afterBegin","子接口号");
+	var newTd31 = newTr3.insertCell(); 
+	newTd31.insertAdjacentHTML("afterBegin","<input name='textfield2214' type='text' class='input'>");
+	var newTd32 = newTr3.insertCell(); 
+	newTd32.insertAdjacentHTML("afterBegin","对端子接口");
+	var newTd33 = newTr3.insertCell();
+	newTd33.insertAdjacentHTML("afterBegin","<input name='textfield227' type='text' class='input'>");
+	newTd30.className="table-list_title";
+	newTd32.className="table-list_title";
+	
+	
+var newTr4 = tab.insertRow(tab.rows.length);
+	var newTd40 = newTr4.insertCell();
+	newTd40.insertAdjacentHTML("afterBegin","子接口号互联说明");
+	var newTd41 = newTr4.insertCell(); 
+	newTd41.insertAdjacentHTML("afterBegin","<input name='textfield2214' type='text' class='input'>");
+	var newTd42 = newTr4.insertCell(); 
+	newTd42.insertAdjacentHTML("afterBegin","子接口号IP地址");
+	var newTd43 = newTr4.insertCell();
+	newTd43.insertAdjacentHTML("afterBegin","<input name='textfield227' type='text' class='input'>");
+	newTd40.className="table-list_title";
+	newTd42.className="table-list_title";
+	
+	var newTr6 = tab.insertRow(tab.rows.length);
+	var newTd60 = newTr6.insertCell();
+	newTd60.insertAdjacentHTML("afterBegin","逻辑接口属性");
+	var newTd61 = newTr6.insertCell(); 
+	newTd61.insertAdjacentHTML("afterBegin","<input name='textfield2214' type='text' class='input'>");
+	var newTd62 = newTr6.insertCell(); 
+	newTd62.insertAdjacentHTML("afterBegin","");
+	newTd60.className="table-list_title";
+	newTd62.colSpan=2;
+
+	
+}
+
+function delTableRow(src){
+	var tab=src.parentElement;
+	var num=src.rowIndex;
+	
+	for(var i=tab.rows.length-1;i>=num;i--){
+		tab.deleteRow(i);
+	}
+}
+    function delTableRow1(src){
+    
+	  src.parentElement.deleteRow(src.rowIndex);
+	  
+   }
+
+
+     function insertRows3(tablename)
+		{  
+		   var myTable=tablename;
+     	   var newRow=myTable.insertRow();//插入新的一行
+    
+     	  for(i=0;i<5;i++){//每行共三列
+		     var newCell=newRow.insertCell();
+			 switch(i){
+			case 0:
+               newCell.innerHTML="<input type='text' name='bianhao' width='30' class='input' >";
+               break;
+		   case 1:
+               newCell.innerHTML="<select name='ruirong' class='common-select'><option value='content1' selected>IP-Trunk</option><option>VLANif</option><option>Ether-TRUNK</option></select>";
+              break;
+			 
+			  case 2:
+               newCell.innerHTML="<input type='text' name='name' width='30' class='input'>";
+              break;
+			   case 3:
+               newCell.innerHTML="<input type='text' name='name' width='30' class='input'onFocus='checkPort();' >";
+              break;
+			case 4:
+				   newCell.innerHTML='<a href="#" onClick="javascript:delTableRow1(this.parentElement.parentElement)">删除</a>';
+				   break;
+			   
+			  }
+		   }
+   }
+ 
+   
+function hve_display(t_id,i_id){//显示隐藏程序 
+var t_id;//表格ID 
+var i_id;//图片ID 
+var on_img="2308.gif";//打开时图片 
+var off_img="2305.gif";//隐藏时图片 
+if (t_id.style.display == "none") {//如果为隐藏状态 
+t_id.style.display="";//切换为显示状态 
+i_id.src=on_img;}//换图 
+else{//否则 
+t_id.style.display="none";//切换为隐藏状态 
+i_id.src=off_img;}//换图 
+}
+function checksbbm()
+{
+document.form1.sbbm.value=document.form1.ds.value+"AR"+document.form1.sbbh1.value;
+}
+function checkNet(){
+document.form1.ipnet.value="86:0371:2211:3020:8098:00";
+}
+
+function checkPort(){
+document.form2.t1.focus();
+showModelessDialog('port.html', '1','dialogWidth=550px,dialogHeight=80px,resizable=1')
+document.form2.tt.value="pos 1/1/1、EF 1/1/0";}
+
+</script>
+<body>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+	
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"><img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(myTable,img1)" style="cursor: hand"> AR设备基本信息添加 </td>
+          </tr>
+        </table>
+
+        <table align="center" class="table-form" id="myTable">
+		<form name="form1">
+          <tr>
+            <td class="table-list_title">设备编号<span class="red">*</span></td>
+            <td class="table-list_title">设备名称<span class="red">*</span></td>
+            <td class="table-list_title">设备厂家</td>
+            <td class="table-list_title">设备型号</td>
+            <td class="table-list_title">地市</td>
+<td class="table-list_title">设备别名</td>
+            <td class="table-list_title">局址</td>
+            <td class="table-list_title">管理地址</td>
+			 <td class="table-list_title">NET地址</td>
+          </tr>
+          <tr>
+            <td style="width:80px" > <input type='text' name='sbbh1' width='30' class='input' value="1" style="width:80px"> </td>
+            <td>
+              <input type="text" value=""/>
+               
+            </td>
+            <td >
+              <select name='ruirong'  class='common-select'>
+                <option value='content1' selected> 华为</option>
+                <option value='content2'>思科</option>
+                <option value='content3'>阿尔卡特</option>
+              </select>
+            </td>
+            <td>
+              <select name='ruirong' class='common-select'>
+                <option value='content1' selected> NE40E</option>
+                <option value='content2'>NE80E</option>
+                <option value='content3'>NE5000E</option>
+              </select>
+            </td>
+            <td>
+              <select name='ds' class='common-select' onChange="checksbbm();">
+               <option value='周口' selected> 周口</option>
+                <option value='南阳'>南阳</option>
+                <option value='驻马店'>驻马店</option>
+              </select>
+            </td>
+<td><input type="text" name="sbbm" value="" style="width:80px"/></td>
+            <td> <input type='text' name='bianhao1' width='30' class='input' value="周口市莲花路街道枢纽楼3层交换机房" > </td>
+            <td> <input type='text' name='bianhao1' width='30' class='input' value="10.96.130.16" onBlur="checkNet();"> </td><td> <input type='text' name='ipnet' width='30' class='input' value=""> </td>
+          </tr>
+		  </form>
+        </table>
+
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="5" align="left"><img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table2,img1)" style="cursor: hand">设备物理信息 </td>
+          </tr>
+        </table>
+        <table align="center" class="table-form" id="table2">
+
+    <div class="tab-page" id="tabPage1">
+    
+      <iframe src="physicsPort_index.html" width="100%" height="300" scrolling="yes" frameborder="0"></iframe>
+    </div>
+        
+         
+        </table>
+		
+      
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="5" align="left"><img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table14,img1)" style="cursor: hand"> 逻辑端口信息 </td>
+          </tr>
+        </table>
+	<table id="table14"  align="center" class="table-form">
+		<tr>
+		<td  colspan="5"></td>
+		</tr>
+		 <tr>
+          <td colspan="5" class="table-title">逻辑接口组信息添加</td>
+		<tr>
+		<td>
+        <table align="center" class="table-form" id="table4">
+		<form name="form2">
+          <tr>
+            <td width="10%" class="table-list_title">逻辑接口组编号<span class="red">*</span></td>
+            <td width="10%" class="table-list_title">逻辑接口组类型<span class="red">*</span></td>
+            <td width="10%" class="table-list_title">对端设备名称<span class="red">*</span></td>
+			 <td width="10%" class="table-list_title">物理端口</td>
+            <td  class="table-button" style="text-align:right"> <input type="button" onClick="insertRows3(table4)" class="long" value="增加一行"/> </td>
+          </tr>
+          <tr>
+            <td> <input type="text" name="text" value=""> </td>
+            <td><select name='jlzlx' class='common-select'>
+		  <option selected></option>
+              <option value='1' >IP-Trunk</option>
+              <option value="2">VLANif</option>
+              <option value="3">Ether-TRUNK</option>
+            </select> </td>
+            <td> <input type="text" name="t1" value=""> </td>
+			 <td> <input type="text" name="tt" value=""  onFocus="checkPort();"> </td>
+            <td></td>
+          </tr>
+		  </form>
+        </table>
+      
+        <table align="center" class="table-form" id="table6">
+		
+		 <tr>
+		 
+          <td colspan="5" class="table-title" style="width:120px">子接口信息添加</td>
+		  <td class="table-button"   > <input type="button" onClick="insertRows1(document.getElementById('table_ce'))" class="long"  style="widows:80px "value="增加子接口信息"/> </td>
+      </tr>
+        </table>
+		
+		
+		 <table  id="table_ce" align="center" class="table-form">
+		 
+		 </table>
+		 
+		</td></tr></table>
+		
+		
+		
+		
+      
+       
+      </td>
+    </tr>
+  </table>
+ 
+</body>
+<script>
+
+	document.getElementById("table2").style.display="none";
+
+document.getElementById("table14").style.display="none";
+</script>
+</html>

@@ -1,0 +1,244 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>业务系统申请表</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+  <script src="../../js/web.js"></script>
+</head>
+<script language="javascript" type="text/javascript" src="../../js/datepicker/WdatePicker.js"></script>
+<link href="../../js/datepicker/default/datepicker.css" rel="stylesheet" type="text/css">
+  <link href="../../js/datepicker/whyGreen/datepicker.css" rel="stylesheet" type="text/css" disabled="disabled">
+<body>
+  
+  <table width="100%" align="center" class="table-list">
+  <tr>
+    <td bgcolor="#FFFFFF">
+     
+      <table width="100%" class="title_table1">
+        <tr>
+          <td colspan="9" align="left"><img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table1,img1)" style="cursor: hand"> 业务系统网元基本信息</td>
+        </tr>
+      </table>
+      <table align="center" class="table-form" id="table1">
+        <tr>
+          <td class="table-list_title">地市名称</td>
+          <td>
+            <select name="select3" class="common-select">
+              <option>郑州</option>
+              <option>开封</option>
+              <option>洛阳</option>
+              <option>信阳</option>
+              <option>漯河</option>
+              <option>濮阳</option>
+              <option>安阳</option>
+              <option>南阳</option>
+              <option selected>周口</option>
+            </select>
+            <span class="red">*</span></td>
+          <td width="10%" class="table-list_title">业务网元名称</td>
+          <td> <select><option  selected="selected">ZHKGM5</option><option>ZHKGM4</option></select><span class="red">*</span></td>
+        </tr>
+        <tr>
+          <td width="10%" class="table-list_title">业务网元容量</td>
+          <td> <input name="textfield2214" type="text" class="input" value="20万" size="20"><span class="red">*</span></td>
+          <td class="table-list_title">业务网元局址</td>
+          <td> <input name="textfield2213" type="text" class="input" value="周口城市莲花路街道枢纽楼3层交换机房" size="20"><span class="red">*</span></td>
+        </tr>
+        <tr>
+          <td class="table-list_title">业务网元厂家</td>
+          <td> <input name="textfield2212" type="text" class="input" value="NOKIA" size="20"><span class="red">*</span></td>
+          <td class="table-list_title">业务网元类型</td>
+          <td> <input name="textfield2211" type="text" class="input" value="MGW" size="20"><span class="red">*</span></td>
+        </tr>
+        <tr>
+          <td class="table-list_title">业务网元归属VLAN信息</td>
+          <td><input name="textfield2210" type="text" class="input" value="1031"></td>
+          <td class="table-list_title">业务网元本端端口描述</td>
+          <td><input name="textfield224" type="text" class="input" value="ZHKGM5_ESA_0"></td>
+        </tr>
+        <tr>
+          <td class="table-list_title">业务网元的网段</td>
+          <td><input name="textfield229" type="text" class="input" value="10.1.7.252/10.1.72.40/30"><span class="red">*</span></td>
+          <td class="table-list_title">业务网元的网段说明</td>
+          <td><input name="textfield223" type="text" class="input" value="软交换信令网段"><span class="red">*</span></td>
+        </tr>
+      </table>
+      <table width="100%" class="title_table1">
+        <tr>
+          <td align="left"><img src="../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table_ce,img1)" style="cursor: hand"> 拟接入的CE信息</td>
+          <td align="right"><input type="button" onClick="insertRows1(document.getElementById('table_ce'))" value="添加CE"/></td>
+        </tr>
+      </table>
+      <table  id="table_ce" align="center" class="table-form">
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="30%" class="pizhu">说明：其中带<span class="red">*</span>号为必填项</td>
+          <td height="30" class="table-button"> </td>
+        </tr>
+      </table>
+</body>
+<script language="JavaScript"> 
+<!-- 
+
+function hve_display(t_id,i_id){//显示隐藏程序 
+var t_id;//表格ID 
+var i_id;//图片ID 
+var on_img="2308.gif";//打开时图片 
+var off_img="2305.gif";//隐藏时图片 
+if (t_id.style.display == "none") {//如果为隐藏状态 
+t_id.style.display="";//切换为显示状态 
+//i_id.src=on_img;
+}//换图 
+else{//否则 
+t_id.style.display="none";//切换为隐藏状态 
+//i_id.src=off_img;
+}//换图 
+} 
+
+//----------init start;
+	var tab=document.getElementById("table_ce");
+	var newTr5 = tab.insertRow(tab.rows.length);
+	var newTd50 = newTr5.insertCell();
+	newTd50.insertAdjacentHTML("afterBegin","<b>拟接入的CE</b>");
+	newTd50.colSpan=5;
+
+	var newTr1 = tab.insertRow(tab.rows.length);
+	var newTd10 = newTr1.insertCell();
+	newTd10.insertAdjacentHTML("afterBegin","地市名称");
+	var newTd11 = newTr1.insertCell(); 
+	newTd11.insertAdjacentHTML("afterBegin","<select name='select3' class='common-select'><option>郑州</option><option selected>周口</option></select>");
+	var newTd12 = newTr1.insertCell(); 
+	newTd12.insertAdjacentHTML("afterBegin","拟接入的CE的名称");
+	var newTd13 = newTr1.insertCell();
+	newTd13.insertAdjacentHTML("afterBegin","<select name='select4' class='common-select'><option selected>HAZHK-PS-SX-CE01-NE40E</option></select>");
+	var newTd14 = newTr1.insertCell();
+	newTd14.insertAdjacentHTML("afterBegin","<input type='button' onClick='delTableRow1(this.parentElement.parentElement)' class='long' value='删除CE'/>");
+	newTd14.rowSpan=2;
+	
+	var newTr3 = tab.insertRow(tab.rows.length);
+	var newTd30 = newTr3.insertCell();
+	newTd30.insertAdjacentHTML("afterBegin","拟接入的CE-VPN实例名称");
+	var newTd31 = newTr3.insertCell(); 
+	newTd31.insertAdjacentHTML("afterBegin","<input name='textfield2214' type='text' class='input' value='ChinaMobile_NGN_SG'>");
+	var newTd32 = newTr3.insertCell(); 
+	newTd32.insertAdjacentHTML("afterBegin","拟接入的网元类型");
+	var newTd33 = newTr3.insertCell();
+	newTd33.insertAdjacentHTML("afterBegin","<input name='textfield227' type='text' class='input' value='MSC SERVER'>");
+
+	var newTr5 = tab.insertRow(tab.rows.length);
+	var newTd50 = newTr5.insertCell();
+	newTd50.insertAdjacentHTML("afterBegin","<b>拟接入的CE端口</b>");
+	var newTd51 = newTr5.insertCell();
+	newTd51.insertAdjacentHTML("afterBegin","<input type='button' onClick='insertRows2(this.parentElement.parentElement)' class='long' value='添加端口'/>");
+	newTd50.colSpan=4;
+	
+	var newTr2 = tab.insertRow(tab.rows.length);
+	var newTd20 = newTr2.insertCell();
+	newTd20.insertAdjacentHTML("afterBegin","拟接入的CE端口编号");
+	var newTd21 = newTr2.insertCell(); 
+	newTd21.insertAdjacentHTML("afterBegin","<select name='select5' class='common-select'><option selected>2033</option></select>");
+	var newTd22 = newTr2.insertCell(); 
+	newTd22.insertAdjacentHTML("afterBegin","拟接入的CE端口描述");
+	var newTd23 = newTr2.insertCell();
+	newTd23.insertAdjacentHTML("afterBegin","<input name='textfield227' type='text' class='input' value='GE-1/0/1'><span class='red'>*</span>");
+	var newTd24 = newTr2.insertCell();
+	newTd24.insertAdjacentHTML("afterBegin","<input type='button' onClick='delTableRow2(this.parentElement.parentElement)' class='long' value='删除端口'/>");
+	newTd24.rowSpan=2;
+
+	var newTr4 = tab.insertRow(tab.rows.length);
+	var newTd40 = newTr4.insertCell();
+	newTd40.insertAdjacentHTML("afterBegin","CE与业务网元间传输路由");
+	var newTd41 = newTr4.insertCell(); 
+	newTd41.insertAdjacentHTML("afterBegin","<input name='textfield2214' type='text' class='input' value='网线直连'><span class='red'>*</span>");
+	var newTd42 = newTr4.insertCell(); 
+	newTd42.insertAdjacentHTML("afterBegin","");
+	var newTd43 = newTr4.insertCell();
+	newTd43.insertAdjacentHTML("afterBegin","");
+//--------init end
+
+
+function insertRows1(tab){
+	var newTr5 = tab.insertRow(tab.rows.length);
+	var newTd50 = newTr5.insertCell();
+	newTd50.insertAdjacentHTML("afterBegin","<b>拟接入的CE</b>");
+	newTd50.colSpan=5;
+
+	var newTr1 = tab.insertRow(tab.rows.length);
+	var newTd10 = newTr1.insertCell();
+	newTd10.insertAdjacentHTML("afterBegin","地市名称");
+	var newTd11 = newTr1.insertCell(); 
+	newTd11.insertAdjacentHTML("afterBegin","<select name='select3' class='common-select'><option>郑州</option><option selected>周口</option></select>");
+	var newTd12 = newTr1.insertCell(); 
+	newTd12.insertAdjacentHTML("afterBegin","拟接入的CE的名称");
+	var newTd13 = newTr1.insertCell();
+	newTd13.insertAdjacentHTML("afterBegin","<select name='select4' class='common-select'><option selected>HAZHK-PS-SX-CE01-NE40E</option></select>");
+	var newTd14 = newTr1.insertCell();
+	newTd14.insertAdjacentHTML("afterBegin","<input type='button' onClick='delTableRow1(this.parentElement.parentElement)' class='long' value='删除CE'/>");
+	newTd14.rowSpan=2;
+	
+	var newTr3 = tab.insertRow(tab.rows.length);
+	var newTd30 = newTr3.insertCell();
+	newTd30.insertAdjacentHTML("afterBegin","拟接入的CE-VPN实例名称");
+	var newTd31 = newTr3.insertCell(); 
+	newTd31.insertAdjacentHTML("afterBegin","<input name='textfield2214' type='text' class='input'>");
+	var newTd32 = newTr3.insertCell(); 
+	newTd32.insertAdjacentHTML("afterBegin","拟接入的网元类型");
+	var newTd33 = newTr3.insertCell();
+	newTd33.insertAdjacentHTML("afterBegin","<input name='textfield227' type='text' class='input'>");
+
+	var newTr5 = tab.insertRow(tab.rows.length);
+	var newTd50 = newTr5.insertCell();
+	newTd50.insertAdjacentHTML("afterBegin","<b>拟接入的CE端口</b>");
+	var newTd51 = newTr5.insertCell();
+	newTd51.insertAdjacentHTML("afterBegin","<input type='button' onClick='insertRows2(this.parentElement.parentElement)' class='long' value='添加端口'/>");
+	newTd50.colSpan=4;
+}
+
+function insertRows2(src){
+	var tab=src.parentElement;
+	var num=src.rowIndex;
+
+	var newTr2 = tab.insertRow(num+1);
+	var newTd20 = newTr2.insertCell();
+	newTd20.insertAdjacentHTML("afterBegin","拟接入的CE端口编号");
+	var newTd21 = newTr2.insertCell(); 
+	newTd21.insertAdjacentHTML("afterBegin","<select name='select5' class='common-select'><option selected>2033</option></select>");
+	var newTd22 = newTr2.insertCell(); 
+	newTd22.insertAdjacentHTML("afterBegin","拟接入的CE端口描述");
+	var newTd23 = newTr2.insertCell();
+	newTd23.insertAdjacentHTML("afterBegin","<input name='textfield227' type='text' class='input'><span class='red'>*</span>");
+	var newTd24 = newTr2.insertCell();
+	newTd24.insertAdjacentHTML("afterBegin","<input type='button' onClick='delTableRow2(this.parentElement.parentElement)' class='long' value='删除端口'/>");
+	newTd24.rowSpan=2;
+
+	var newTr4 = tab.insertRow(num+2);
+	var newTd40 = newTr4.insertCell();
+	newTd40.insertAdjacentHTML("afterBegin","CE与业务网元间传输路由");
+	var newTd41 = newTr4.insertCell(); 
+	newTd41.insertAdjacentHTML("afterBegin","<input name='textfield2214' type='text' class='input'><span class='red'>*</span>");
+	var newTd42 = newTr4.insertCell(); 
+	newTd42.insertAdjacentHTML("afterBegin","");
+	var newTd43 = newTr4.insertCell();
+	newTd43.insertAdjacentHTML("afterBegin","");
+}
+
+function delTableRow1(src){
+	var tab=src.parentElement;
+	var num=src.rowIndex;
+	
+	for(var i=tab.rows.length-1;i>=num-1;i--){
+		tab.deleteRow(i);
+	}
+}
+
+function delTableRow2(src){
+	var tab=src.parentElement;
+	var num=src.rowIndex;
+
+	tab.deleteRow(num);
+	tab.deleteRow(num);
+}
+//--> 
+</script>
+</html>

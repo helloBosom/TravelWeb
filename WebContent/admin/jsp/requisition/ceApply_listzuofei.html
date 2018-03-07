@@ -1,0 +1,213 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>CE申请表</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<script language="javascript" type="text/javascript" src="../../js/datepicker/WdatePicker.js"></script>
+<link href="../../js/datepicker/default/datepicker.css" rel="stylesheet" type="text/css">
+  <link href="../../js/datepicker/whyGreen/datepicker.css" rel="stylesheet" type="text/css" disabled>
+  <script language="javascript" type="text/javascript">
+  function del(){
+  var box = document.getElementsByName("checkbox");
+  var boxvalue = new Array();
+  for(i=0; i<box.length; i++)
+  {
+  if(box[i].checked)
+  boxvalue[i] = box[i].value;
+  }
+  if(boxvalue.length<=0)
+  alert("请选择要删除的记录");
+  else
+   if(confirm("确认删除吗？"))
+   window.location.reload();
+  }
+</script>
+  <script language="JavaScript">
+    function fnCheck() {	
+        if( fnCheckTime())		
+		document.forms[0].submit();
+    }
+	
+	
+	function initStardate(obj)
+	{		
+		//距离当天时间7天前的日期
+		var a = new Date();
+		a = a.valueOf();		
+		a = a - 7 * 24 * 60 * 60 * 1000;
+		a = new Date(a);
+		//alert(a);
+		//alert(a.getFullYear() + "年" + (a.getMonth() + 1) + "月" + a.getDate() + "日");
+		var n_month,n_date;
+		if( a.getMonth() + 1<10 )
+		  {	n_month = "0"+(a.getMonth() + 1);
+		  		//alert (n_month);
+		  }
+		 else{
+		 	n_month = a.getMonth() + 1;
+		 }
+		 if ( a.getDate()<10  )
+		  {
+			   n_date = "0"+ a.getDate();
+			  // alert (n_date);
+		  }
+		  else{
+		  	 n_date = a.getDate();
+		  } 
+		
+		var b=a.getFullYear() + "-" + n_month + "-" + n_date;
+		document.all(obj).value=b;
+	}
+	function initEnddate(obj)
+	{
+		var a = new Date();
+		var n_month,n_date;
+		if( a.getMonth() + 1<10 )
+		  {	n_month = "0"+(a.getMonth() + 1);
+		  		//alert (n_month);
+		  }
+		 else{
+		 	n_month = a.getMonth() + 1;
+		 }
+		 if ( a.getDate()<10  )
+		  {
+			   n_date = "0"+ a.getDate();
+			   //alert (n_date);
+		  }
+		  else{
+		  	 n_date = a.getDate();
+		  } 
+		
+		var b=a.getFullYear() + "-" + n_month + "-" + n_date;
+		//var b=a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate();
+		//document.write(a.getFullYear() + "-" + (a.getMonth() + 1) + "-" + a.getDate());
+		document.all(obj).value=b;
+	}
+	</script>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：修改团期</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table align="center" class="table-form">
+          <tr>
+            <td colspan="7" class="table-title"> 团期信息查询</td>
+          <tr>
+            <td  class="table-list_title">线路类型</td>
+            <td>
+              <select name='select' class='common-select'>
+                <option>普吉岛</option>
+                <option>爱琴海</option>
+              </select>            </td>
+            <td class="table-list_title">团期状态</td>
+            <td>
+              <select name='ruirong'  class='common-select'>
+                <option value='content1' selected>全部</option>
+                <option value='content2'>销售中</option>
+                <option value='content3'>已过期</option>
+              </select>            </td>
+            <td rowspan="4"><span class="table-button"><input type="button" value="查询" name="B33" class="input" onClick="location.href('#')"></span></td>
+          </tr>
+          <tr>
+            <td class="table-list_title">产品名称</td>
+            <td>
+              <input name="textfield2" type="text" class="input"></td>
+              <td class="table-list_title">产品编号</td>
+            <td>
+              <input name="textfield2" type="text" class="input"></td>
+          </tr>
+          <tr>
+            <td class="table-list_title">机位余量</td>
+            <td>
+              <input name="textfield2" type="text" class="input">            </td>
+              <td class="table-list_title">行程天数</td>
+            <td>
+              <select name='ruirong'  class='common-select'>
+                <option selected>全部</option>
+                <option>1-5天</option>
+                <option>5-10天</option>
+                <option>10天以上</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td class="table-list_title">发布团期起</td>
+            <td><input name="text" type="text" class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true)"></td>
+            <td class="table-list_title">发布团期止</td>
+            <td><input name="text1" type="text" class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true)"></td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="60%" bgcolor="#FFFFFF">　</td>
+            <td width="40%" height="30" bgcolor="#FFFFFF" class="table-button"><input type="button" value="添加" name="B332" class="input" onClick="location.href('ceApply_add.html')"> <input type="button" value="删除" name="B334" class="input" onClick="javascript:del();"> </td>
+          </tr>
+        </table>
+        <table align="center" class="table-table">
+          <tr>
+            <td colspan="10" class="table-title"> 团期信息列表</td>
+          <tr>
+            <td class="table-title1">　</td>
+            <td class="table-title1">产品名称</td>
+            <td class="table-title1">线路类型</td>
+            <td class="table-title1">出团日期</td>
+            <td class="table-title1">团期状态</td>
+            <td class="table-title1">价格（元）</td>
+            <td class="table-title1">计划人数</td>
+            <td class="table-title1">机位余量</td>
+            <td class="table-title1">操作</td>
+          </tr>
+          <tr>
+            <td align="center"> <input type="checkbox" name="checkbox" value="checkbox"> </td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">绝美天堂斯米兰+静谧考拉 顶级奢华之旅</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">普吉岛旅游线路</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">2008-04-09</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">已过期</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">7280.0</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">50</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">-</td>
+            <td><a href="serviceApply_updatenew.html">修改</a>&nbsp;&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="center"> <input type="checkbox" name="checkbox" value="checkbox"> </td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">绝美天堂斯米兰+静谧考拉 顶级奢华之旅</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">普吉岛旅游线路</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">2010-04-09</td>
+            <td title="单击查看详细信息" style="cursor:hand; color:#F00" onClick="location.href('serviceApply_displaynew.html')">销售中</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">7280.0</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">60</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">10</td>
+            <td><a href="serviceApply_updatenew.html">修改</a>&nbsp;&nbsp;<a href="#">作废</a></td>
+          </tr>
+          <tr>
+            <td align="center"> <input type="checkbox" name="checkbox" value="checkbox"> </td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">绝美天堂斯米兰+静谧考拉 顶级奢华之旅</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">普吉岛旅游线路</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">2011-04-09</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">已过期</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">7280.0</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">80</td>
+            <td title="单击查看详细信息" style="cursor:hand" onClick="location.href('serviceApply_displaynew.html')">-</td>
+            <td><a href="serviceApply_updatenew.html">修改</a>&nbsp;&nbsp;</td>
+          </tr>
+        </table>
+        <table width="96%" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td align="right" bgcolor="#FFFFFF"> 共1条记录 <a href="#">首页</a> | <a href="#">上一页</a> | <a href="#">下一页</a> | <a href="#">尾页</a>
+              <select name="_page">
+                <option value="1" selected="selected">1/2</option>
+                <option value="2">2/2</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+<script type="text/javascript">var Ptr=document.getElementsByTagName("tr");function recolor() {for (i=1;i<Ptr.length+1;i++) {Ptr[i-1].className = (i%2>0)?"t1":"t2";}}window.onload=recolor;for(var i=0;i<Ptr.length;i++) {Ptr[i].onmouseover=function(){this.tmpClass=this.className;this.className = "t3";};Ptr[i].onmouseout=function(){this.className=this.tmpClass;};}</script>

@@ -1,0 +1,109 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>设备信息添加</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：设备信息添加</td>
+    </tr>
+  </table>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+        <table align="center" class="table-form">
+          <tr>
+            <td colspan="5" class="table-title"> 设备信息添加</td>
+          <tr>
+            <td width="10%" class="table-list_title">编号</td>
+            <td><input name="textfield2" type="text" class="input"><span class="red">*</span></td>
+            <td width="10%" class="table-list_title">设备名称</td>
+            <td><input name="textfield23" type="text" class="input"><span class="red">*</span></td>
+      
+          </tr>
+          <tr>
+            <td class="table-list_title">设备别名</td>
+            <td><input name="textfield22" type="text" class="input"></td>
+            <td class="table-list_title">设备型号</td>
+            <td><select name='ruirong' class='common-select'>
+                <option value='content1' selected> NE40E</option>
+                <option value='content2'>NE80E</option>
+                <option value='content3'>NE5000E</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td class="table-list_title">设备厂家</td>
+            <td> <select name='ruirong'  class='common-select'>
+                <option value='content1' selected> 华为</option>
+                <option value='content2'>思科</option>
+                <option value='content3'>阿尔卡特</option>
+              </select></td>
+            <td class="table-list_title">地市</td>
+            <td><select name='ruirong' class='common-select'>
+                <option value='content1' selected> 郑州</option>
+                <option value='content2'>周口</option>
+                <option value='content3'>驻马店</option>
+              </select></td>
+          </tr>
+          <tr>
+            <td class="table-list_title">局址</td>
+            <td><input name="textfield223" type="text" class="input"></td>
+            <td class="table-list_title">管理地址</td>
+            <td><input name="textfield224" type="text" class="input"></td>
+          </tr>
+		   <tr>
+            <td class="table-list_title">NET地址</td>
+            <td><input name="textfield223" type="text" class="input"></td>
+            <td  colspan="2"></td>
+         
+          </tr>
+        </table>
+		
+		
+		 <table align="center" class="table-form" id="ts1">
+          <tr>
+            <td colspan="5" class="table-title"> 物理信息添加</td>
+         </tr>
+        </table>
+		
+		 <table align="center" class="table-form" id="ts">
+          <tr id="xx">
+           <div class="tab-page" id="tabPage1"  style="width:800px">
+    
+      <iframe src="physicsPort_index.html" width="100%" height="300" scrolling="no" frameborder="0"></iframe>
+    </div>
+         </tr>
+        </table>
+             <table width="100%" border="0" cellspacing="0" cellpadding="0" id="ts2">
+          <tr>
+            <td width="30%" class="pizhu">说明：其中带<span class="red">*</span>号为必填项</td>
+            <td height="30" style="padding-right:300px;" class="table-button"> <input type="button" value="提交" name="B333" class="input" onClick="window.returnValue=1;window.close();"> <input type="button" value="重置" name="B332" class="input" onClick="location.href('#')"> </td>
+          </tr>
+        </table>
+         
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="ts3">
+          <tr>
+            <td width="30%" class="pizhu">说明：其中带<span class="red">*</span>号为必填项</td>
+            <td height="30" style="padding-right:300px;" class="table-button"> <input type="button" value="添加端口" name="B333" class="long" onClick="checkport();">   <input type="button" value="重置" name="B332" class="input" onClick="location.href('#')"> </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+<script>
+function checkport()
+{
+document.getElementById("ts1").style.display="";
+document.getElementById("ts2").style.display="";
+document.getElementById("ts").style.display="";
+document.getElementById("ts3").style.display="none";
+}
+document.getElementById("ts1").style.display="none";
+document.getElementById("ts2").style.display="none";
+document.getElementById("ts").style.display="none";
+
+</script>
+</html>

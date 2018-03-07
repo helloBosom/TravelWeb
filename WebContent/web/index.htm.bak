@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta name="Generator" content="易·网站管理系统 V6.2.3">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="陕西中国旅行社有限责任公司官方网站,陕西旅游,西安旅游,陕西旅行社,西安旅行社,西安周边游,西安一日游,出境旅游,国内旅游,西安旅游景点,西安旅游线路,西安旅游网,中国旅行社,西安旅游介绍,去西安旅游">
+<meta name="description" content="陕西中国旅行社有限责任公司是中国旅行社协会常务理事单位和中国中旅集团常务理事单位，陕西旅游集团成员单位，是国家旅游局首批特许经营中国公民出国旅游的国际旅行社。">
+<title>首页</title>
+
+
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/css.css" rel="stylesheet" type="text/css">
+<script src="js/lxb.js" charset="utf-8"></script><script type="text/javascript" src="js/banner.js"></script>
+<script src="/JS_Float.aspx" type="text/javascript"></script></head>
+<style type="text/css">
+#pictable{
+width:960px;
+}
+#pictable span{
+display:block;
+height:67px;
+}
+</style>
+<body>
+
+
+<div class="head">
+	<div class="header">
+    	<div class="header_top">
+        	<ul>
+        	    
+           		<li id="header_li1"><a href="#" onclick="window.external.addFavorite(this.href,this.title);return false;" title="陕西中国旅行社有限公司" rel="sidebar">收藏本站</a> </li>
+                <li id="header_li2"><a href="#">联系我们</a></li>
+                <li id="header_li3"><a href="../admin/jsp/login.html">登录后台</a></li>
+            </ul>
+        </div>
+        <div><a href="#"><img src="images/logo.jpg"></a></div>
+    </div>
+    <div id="dh">
+    	<div class="nav">
+        	<ul>
+            	<li><a href="#">网站首页</a></li>
+                <li><a href="#">西安旅游</a></li>
+                <li><a href="#">出境旅游</a></li>
+                <li><a href="#">国内旅游</a></li>
+                <li><a href="#">周边旅游</a></li>
+                <li><a href="#">青岛世园会</a></li>
+                <li><a href="#">关于我们</a></li>
+                <li><a href="#">联系我们</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="ss">
+	<div class="ss_bd">
+    	<ul>
+         <form method="post" action="/?mod=search">
+           <input value="" name="module" type="hidden">
+           <input value="add" name="action" type="hidden">
+        	<li class="ss_bd_l">
+            <input name="keyword" style="width:188px; border:1px solid #e7e7e7; background:#fff; height:26px; line-height:26px; padding-left:5px;" type="text">
+            </li>
+            <li class="ss_bd_r">
+            <input name="button" id="button" value="" class="ss_an" type="submit">
+            </li>
+         </form>   
+        </ul>
+  </div>
+ 	<div class="gjc">关键词：
+<!--    <a href="/?mod=xian&tid=9">西安一日游</a><a href="/?mod=xian&tid=10">西安二日游</a><a href="/?mod=xian&tid=11">西安三日游</a><a href="/?mod=xian&tid=12">西安四日游</a><a href="/?mod=xian&tid=13">西安五日游</a><a href="/?mod=chujing&tid=15">海岛游</a><a href="/?mod=chujing&tid=16">港澳台</a><a href="/?mod=chujing&tid=19">北美</a><a href="/?mod=guonei&tid=20">华东</a><a href="/?mod=guonei&tid=22">华南</a>
+-->    
+        <a href="#">西安一日游</a>
+        <a href="#">西安二日游</a>
+        <a href="#">西安三日游</a>
+        <a href="#">西安四日旅</a>
+        <a href="#">西安五日游</a>
+     
+        <a href="#">俄罗斯</a>
+        <a href="#">港澳</a>
+            <a href="#">北京</a>
+        <a href="#">华东</a>
+            <a href="#">陕西</a>
+        </div>
+</div>
+<div class="banner">
+  <div id="ibanner">
+    <div id="ibanner_pic">
+	  
+       <table id="pictable">
+		 <tr><td><a href="scenicdetail.htm"><img src="images/f1.jpg" width="310px"></a><br>
+		        
+				<span><center><a href="scenicdetail.htm"><font style="color:red;font-size:150%" >皇帝合葬陵-乾陵</font></a></center><br>
+				中国乃至世界上独一无二的一座两朝帝王、一对夫妻皇帝合葬陵-乾陵</span></td>
+
+					<td><a href="scenicdetail.htm"><img src="images/f2.jpg" width="310px"></a><br>
+				<span><center><a href="scenicdetail.htm"><font style="color:red;font-size:150%" >大雁塔音乐喷泉</font></a></center><br>
+				欣赏亚洲最大的音乐喷泉---大雁塔音乐喷泉</span></td>
+
+					<td><a href="scenicdetail.htm"><img src="images/f3.jpg" width="310px"></a><br>
+				<span><center><a href="scenicdetail.htm"><font style="color:red;font-size:150%" >皇帝合葬陵-乾陵</font></a></center><br>
+				中国乃至世界上独一无二的一座两朝帝王、一对夫妻皇帝合葬陵-乾陵</span></td></tr>
+				
+		  <tr><td><a href="scenicdetail.htm"><img src="images/f4.jpg" width="310px"></a><br>
+				<span><center><a href="scenicdetail.htm"><font style="color:red;font-size:150%" >皇帝合葬陵-乾陵</font></a></center><br>
+				中国乃至世界上独一无二的一座两朝帝王、一对夫妻皇帝合葬陵-乾陵</span></td>	
+
+					<td><a href="scenicdetail.htm"><img src="images/f1.jpg" width="310px"></a><br>
+				<span><center><a href="scenicdetail.htm"><font style="color:red;font-size:150%" >皇帝合葬陵-乾陵</font></a></center><br>
+				中国乃至世界上独一无二的一座两朝帝王、一对夫妻皇帝合葬陵-乾陵</span></td>
+
+					<td><a href="scenicdetail.htm"><img src="images/f2.jpg" width="310px"></a><br>
+				<span><center><a href="scenicdetail.htm"><font style="color:red;font-size:150%" >皇帝合葬陵-乾陵</font></a></center><br>
+				中国乃至世界上独一无二的一座两朝帝王、一对夫妻皇帝合葬陵-乾陵</span></td></tr>
+		  <tr><td colspan="3"><center><font style="color:red;font-size:200%" ><a href="scenic.htm">MORE...</a></font></center></td></tr>
+        </table>
+</div>
+</div>
+</div>
+
+<div class="main">
+  <div class="main_left">
+   	<div class="ny_left_lvxl">
+   	  <div class="ny_left_lvxl_top">西安旅游线路</div>
+            <div class="ny_left_lvxl_fl">
+            	<ul>
+             
+                            <li><a href="#">西安一日游</a></li>	
+                            <li><a href="#">西安二日游</a></li>	
+                            <li><a href="#">西安三日游</a></li>	
+                            <li><a href="#">西安四日旅</a></li>	
+                            <li><a href="#">西安五日游</a></li>	
+                            <li><a href="#">西安全线游</a></li>	
+              
+            </ul>
+      </div>
+            
+        </div>
+    <div class="ny_left_lxwm">
+   	  <div class="ny_left_lvxl_top">联系我们</div>
+            <div class="ny_left_lxwm_nr">
+
+                        <p align="left"><strong>免费电话：</strong>400-029-1023<br><strong>直拨电话：</strong></p><p align="left">029-89581951</p><p align="left">029-89581952</p><p align="left">02987559406</p><p align="left"><strong>传 真：<br>029-82402743<br>手 机: <br></strong>15002982802<br>18192638562<br>13309100131</p><p align="left"><br><strong>地 址：西安市东关正街70#招商局广场9E<br>邮编：710048<br><br><br><br></strong></p>                  
+            
+            
+      </div>
+      
+
+     
+            <div class="ny_jpxl_top"></div>
+            <div class="ny_jpxl_bt">
+                        <ul>
+                            <li>精品线路</li>
+                        </ul>
+                  </div>
+         	</a><div class="ny_jpxl_nr_list"><a <="" ul="">
+                	</a><ul><a <="" ul="">
+                    
+                                         	</a><li><a <="" ul=""></a><a href="#" target="_blank">大明宫、钟鼓楼广场、大雁塔广...</a></li>
+					                     	<li><a href="#" target="_blank">乾陵、永泰公主墓/懿德太子墓...</a></li>
+					                     	<li><a href="#" target="_blank">半坡、华清池骊山、兵马俑（含秦...</a></li>
+					                     	<li><a href="#" target="_blank">兵马俑(含秦始皇陵)、华清池、...</a></li>
+					                     	<li><a href="#" target="_blank">华山一日游（含北峰往返索道及进...</a></li>
+					                     	<li><a href="#" target="_blank">乾陵、法门寺、茂陵纯玩经典一...</a></li>
+					                     	<li><a href="#" target="_blank">明城墙、大雁塔广场、钟鼓楼广...</a></li>
+					                     	<li><a href="#" target="_blank">革命圣地延安、黄帝陵、壶口两...</a></li>
+					                     	<li><a href="#" target="_blank">兵马俑、华清宫、西安市区两日...</a></li>
+					                     	<li><a href="#" target="_blank">兵马俑、华清宫、华山两日游</a></li>
+					                     </ul>
+              </div>
+        </div>
+        
+  </div>
+  <div class="ny_lylb">
+    <div class="ny_lylb_top">
+        <ul>
+          <li><span>当前位置：<a href="#" target="_blank">首页</a> -&gt; <a href="#" target="_blank">西安旅游线路</a></span>西安旅游线路</li>
+        </ul>
+        </div>
+    <div class="ny_lylb_nr">
+    
+    
+           <div class="ny_lylb_nr_lb">
+           <div class="ny_lylb_nr_lb_img"><img src="images/2016022911253956d3ba333567f.jpg"></div>
+           <div class="ny_lylb_nr_lb_wz">
+               <ul>
+                  <li class="ny_lylb_nr_lb_wz_bt"><span><a href="#" target="_blank">价格:130元/人</a></span><a href="#" target="_blank">大明宫、钟鼓楼广场、大雁塔广场一日游</a></li>
+                  <li>1、参观国家遗址公园是世界文化遗产，全国重点文物保护单位---大明宫遗址公园2、欣赏亚洲最大的音乐喷泉---大雁塔音乐喷泉</li>
+                  <li class="ny_lylb_nr_lb_wz_yd"><a href="roatedetail.htm" target="_blank">去看看</a></li>
+                </ul>
+                </div>
+       <div style="clear:both;"></div>
+       </div>
+     
+		         <div class="ny_lylb_nr_lb">
+           <div class="ny_lylb_nr_lb_img"><img src="images/2016022911040756d3b52798969.jpg"></div>
+           <div class="ny_lylb_nr_lb_wz">
+               <ul>
+                  <li class="ny_lylb_nr_lb_wz_bt"><span><a href="#" target="_blank">价格:280元/人</a></span><a href="#" target="_blank">乾陵、永泰公主墓/懿德太子墓、法门寺一日游</a></li>
+                  <li>★参观有“关中塔庙始祖”之称的法门寺，及其展示盛唐文化的主题公园。★游览中国乃至世界上独一无二的一座两朝帝王、一对夫妻皇帝合葬陵-乾陵</li>
+                  <li class="ny_lylb_nr_lb_wz_yd"><a href="roatedetail.htm" target="_blank">去看看</a></li>
+                </ul>
+                </div>
+       <div style="clear:both;"></div>
+       </div>
+     
+		         <div class="ny_lylb_nr_lb">
+           <div class="ny_lylb_nr_lb_img"><img src="images/2016022910493056d3b1baa037b.jpg"></div>
+           <div class="ny_lylb_nr_lb_wz">
+               <ul>
+                  <li class="ny_lylb_nr_lb_wz_bt"><span><a href="#" target="_blank">价格:420元/人</a></span><a href="#" target="_blank">半坡、华清池骊山、兵马俑（含秦始皇陵）、秦陵地宫一日游</a></li>
+                  <li>★ 游览世界第八大奇迹兵马俑，此景点是中外游客必到之处。★ 天下温泉二千六，唯有华清为第一”的见证了唐玄宗和杨贵妃千古爱情的华清池。★游览古代“褒姒一笑失天下”的发生地--骊山风景区</li>
+                  <li class="ny_lylb_nr_lb_wz_yd"><a href="roatedetail.htm" target="_blank">去看看</a></li>
+                </ul>
+                </div>
+       <div style="clear:both;"></div>
+       </div>
+     
+		         <div class="ny_lylb_nr_lb">
+           <div class="ny_lylb_nr_lb_img"><img src="images/2014063011333653b0da9016e37.jpg"></div>
+           <div class="ny_lylb_nr_lb_wz">
+               <ul>
+                  <li class="ny_lylb_nr_lb_wz_bt"><span><a href="#" target="_blank">价格:360元/人</a></span><a href="#" target="_blank">兵马俑(含秦始皇陵)、华清池、骊山经典纯玩一日游</a></li>
+                  <li>★ 游览世界第八大奇迹兵马俑，此景点是中外游客必到之处。★ 天下温泉二千六，唯有华清为第一”的见证了唐玄宗和杨贵妃千古爱情的华清池。★游览古代“褒姒一笑失天下”的发生地--骊山风景区</li>
+                  <li class="ny_lylb_nr_lb_wz_yd"><a href="roatedetail.htm" target="_blank">去看看</a></li>
+                </ul>
+                </div>
+       <div style="clear:both;"></div>
+       </div>
+     
+		         <div class="ny_lylb_nr_lb">
+           <div class="ny_lylb_nr_lb_img"><img src="images/2014062515225953aa78d34c4b5.jpg"></div>
+           <div class="ny_lylb_nr_lb_wz">
+               <ul>
+                  <li class="ny_lylb_nr_lb_wz_bt"><span><a href="#" target="_blank">价格:450元/人</a></span><a href="#" target="_blank">华山一日游（含北峰往返索道及进山车）</a></li>
+                  <li>★五岳归来不看山，华山归来不看岳”-以险峻著称的华山。</li>
+                  <li class="ny_lylb_nr_lb_wz_yd"><a href="roatedetail.htm" target="_blank">去看看</a></li>
+                </ul>
+                </div>
+       <div style="clear:both;"></div>
+       </div>
+     
+		         <div class="ny_lylb_nr_lb">
+           <div class="ny_lylb_nr_lb_img"><img src="images/2014062515235353aa79097270f.jpg"></div>
+           <div class="ny_lylb_nr_lb_wz">
+               <ul>
+                  <li class="ny_lylb_nr_lb_wz_bt"><span><a href="#" target="_blank">价格:330元/人</a></span><a href="#" target="_blank">乾陵、法门寺、茂陵纯玩经典一日游</a></li>
+                  <li>★参观有“关中塔庙始祖”之称的法门寺，及其展示盛唐文化的主题公园。★参观汉武帝刘彻茂陵，霍去病墓和大型石刻群★游览中国乃至世界上独一无二的一座两朝帝王、一对夫妻皇帝合葬陵-乾陵★汉武帝茂陵、霍去病墓及大型石刻群而蜚声海内外的西汉断代史博物馆-茂陵博物馆</li>
+                  <li class="ny_lylb_nr_lb_wz_yd"><a href="roatedetail.htm" target="_blank">去看看</a></li>
+                </ul>
+                </div>
+       <div style="clear:both;"></div>
+       </div>
+     
+		         <div class="ny_lylb_nr_lb">
+           <div class="ny_lylb_nr_lb_img"><img src="images/20140617143103539fe0a73d091.jpg"></div>
+           <div class="ny_lylb_nr_lb_wz">
+               <ul>
+                  <li class="ny_lylb_nr_lb_wz_bt"><span><a href="#" target="_blank">价格:120元/人</a></span><a href="#" target="_blank">明城墙、大雁塔广场、钟鼓楼广场一日游</a></li>
+                  <li>★ 尽览从秦皇汉武到现代文明融为一体的中国十三朝古都。&nbsp; ★&nbsp;亚洲最大的音乐喷泉广场-大雁塔北广场★ 钟鼓楼广场以及回民街。</li>
+                  <li class="ny_lylb_nr_lb_wz_yd"><a href="roatedetail.htm" target="_blank">去看看</a></li>
+                </ul>
+                </div>
+       <div style="clear:both;"></div>
+       </div>
+     
+		         <div class="ny_lylb_nr_lb">
+           <div class="ny_lylb_nr_lb_img"><img src="images/2014062616012953abd35939388.jpg"></div>
+           <div class="ny_lylb_nr_lb_wz">
+               <ul>
+                  <li class="ny_lylb_nr_lb_wz_bt"><span><a href="#" target="_blank">价格:380元/人</a></span><a href="#" target="_blank">革命圣地延安、黄帝陵、壶口两日游</a></li>
+                  <li>★ 革命圣地延安-到了陕西你不得不去的地方。                          ★ 中华人文始祖-黄帝...</li>
+                  <li class="ny_lylb_nr_lb_wz_yd"><a href="roatedetail.htm" target="_blank">去看看</a></li>
+                </ul>
+                </div>
+       <div style="clear:both;"></div>
+       </div>
+     
+		     
+  
+    </div>
+    <div class="page">
+ 			<a class="info">25条记录</a> <a class="current">1</a> <a href="#">2</a> <a href="#">3</a> <a href="#">4</a> <a href="#">下一页</a>            </div>
+    
+  </div>
+    
+    <div style="clear:both;"></div>
+</div>
+
+
+
+<div style="height:15px;"></div>
+<div class="link">
+	<div class="link_bt">友情链接</div>
+    <div class="link_nr">
+   
+   		<a href="#" target="_blank">陕西中国旅行社</a>
+   		<a href="#" target="_blank">陕西中国旅行社</a>
+   		<a href="#" target="_blank">陕西中国旅行社</a>
+   
+    </div>
+    <!--<div class="link_gd">更多+</div>-->
+</div>
+<div class="f">
+  <div class="f_t">
+   	<div class="f_t_l">
+        	<ul>
+           	  <li style="font-size:14px; font-weight:bold;">预订流程说明</li>
+                              <li><a href="#">签署合同</a></li>
+                              <li><a href="#">选择付款方式</a></li>
+                              <li><a href="#">在线提交订单</a></li>
+                              <li><a href="#">查询线路</a></li>
+                          </ul>
+    </div>
+        <div class="f_t_l">
+        	<ul>
+            	<li style="font-size:14px; font-weight:bold;">支付说明</li>
+                              <li><a href="#" target="_blank">上门收款</a></li>
+                              <li><a href="#" target="_blank">银行转帐</a></li>
+                              <li><a href="#" target="_blank">网上支付</a></li>
+                              <li><a href="#" target="_blank">门市到店付款</a></li>
+                          </ul>
+        </div>
+    <div class="f_t_l">
+        	<ul>
+            	<li style="font-size:14px; font-weight:bold;">签署旅游合同</li>
+                              <li><a href="#" target="_blank">上门签署</a></li>
+                              <li><a href="#" target="_blank">快递签署</a></li>
+                              <li><a href="#" target="_blank">传真签署</a></li>
+                              <li><a href="#" target="_blank">旅游合同范本</a></li>
+                          </ul>
+    </div>   
+        <div class="f_t_l">
+        	<ul>
+            	<li style="font-size:14px; font-weight:bold;">其他事项</li>
+                              <li><a href="#">自由行攻略</a></li>
+                              <li><a href="#">退款退团问题</a></li>
+                              <li><a href="#">旅游保险问题</a></li>
+                              <li><a href="#">签证相关问题</a></li>
+                          </ul>
+        </div>
+      <div style="float:right; margin-right:15px; width:202px;"><img src="images/gj.jpg"></div>
+    </div>
+    </body>
+</html>

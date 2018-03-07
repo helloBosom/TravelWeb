@@ -1,0 +1,211 @@
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <!-- this link element includes the css definitions that describes the tab pane -->
+  <!--
+<link type="text/css" rel="stylesheet" href="tab.winclassic.css" />
+-->
+  <link id="webfx-tab-style-sheet" type="text/css" rel="stylesheet" href="../../../css/tab.webfx.css"/>
+  <!-- the id is not needed. It is used here to be able to change css file at runtime -->
+  <script type="text/javascript" src="../../../js/tabpane.js"></script>
+</head>
+<link href="../../../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../../../css/grid.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../../../js/grid.js"></script>
+<body>
+  <script type="text/javascript">
+tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ) );
+//tp1.setClassNameTag( "dynamic-tab-pane-control-luna" );
+//alert( 0 )
+</script>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：业务系统申请表</td>
+    </tr>
+  </table>
+  <table width="100%" class="title_table1">
+    <tr>
+      <td colspan="9" align="left"><img src="../../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(myTable1,img1)" style="cursor: hand"> 申请表基本信息 </td>
+    </tr>
+  </table>
+ 
+        <table align="center" class="table-form" id="table1">
+          <tr>
+            <td class="table-list_title">申请单编号</td>
+            <td>IPNET2008040901</td>
+            <td class="table-list_title">申请人</td>
+            <td>徐兵</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">申请单类型</td>
+            <td > 业务系统接入需求单 </td>
+            <td class="table-list_title">申请人联系方式</td>
+            <td> 15863965022 </td>
+          </tr>
+          <tr>
+            <td class="table-list_title">申请单名称</td>
+            <td>业务系统接入需求单</td>
+            <td class="table-list_title">申请时间</td>
+            <td> 2008-04-09</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">紧急情况</td>
+            <td> 紧急</td>
+            <td class="table-list_title">网络类型</td>
+            <td> 省网接入层</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">设备工期</td>
+            <td>12A </td>
+            <td class="table-list_title">设备入网时间</td>
+            <td> </td>
+          </tr>
+        </table>
+  <div class="tab-pane" id="tabPane1">
+    <div class="tab-page" id="tabPage1">
+      <h2 class="tab">ZHKGM4</h2>
+      <iframe src="../serviceApply_detail.html" width="100%" height="250%" scrolling="auto" frameborder="0"></iframe>
+    </div>
+    <div class="tab-page" id="tabPage2">
+      <h2 class="tab">ZHKGM5</h2>
+      <iframe src="../serviceApply_detail_temp1.html" width="100%" height="250%" scrolling="auto"frameborder="0"></iframe>
+    </div>
+  </div>
+  <table width="100%" align="center" cellpadding="0" cellspacing="0">
+          <tr>
+            <td class="Title">审批信息</td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"><img src="../../../images/arrow1.gif" width="16" height="16" name="img1"  onClick="hve_display(table4,img1)" style="cursor: hand"> 业务系统管理员确认 </td>
+            <td style="width:70px" >[已处理]</td>
+          </tr>
+        </table>
+        <table align="center" id="table4" class="table-table">
+          <tr >
+            <td class="table-list_title">确认人</td>
+            <td> 张新鹏 </td>
+            <td class="table-list_title">确认时间</td>
+            <td>2008-04-09</td>
+            <td class="table-list_title">是否同意</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">确认意见</td>
+            <td colspan="5">
+              <textarea name="ff" cols="100" rows="2" readonly="readonly">同意</textarea>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"><img src="../../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table5,img1)" style="cursor: hand">CE管理员确认</td>
+            <td style="width:70px" >[已处理]</td>
+          </tr>
+        </table>
+        <table align="center" id="table5" class="table-table">
+          <tr >
+            <td class="table-list_title">确认人</td>
+            <td> 刘义 </td>
+            <td class="table-list_title">确认时间</td>
+            <td>2008-04-09</td>
+            <td class="table-list_title">是否同意</td>
+            <td>是</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">确认意见</td>
+            <td colspan="5">
+              <textarea name="ff" cols="100" rows="2" readonly="readonly">同意</textarea>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"><img src="../../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table6,img1)" style="cursor: hand">传输管理员确认</td>
+            <td style="width:70px" >[未处理]</td>
+          </tr>
+        </table>
+        <table align="center" id="table6" class="table-table">
+          <tr >
+            <td class="table-list_title">确认人</td>
+            <td>&nbsp;</td>
+            <td class="table-list_title">确认时间</td>
+            <td>&nbsp;</td>
+            <td class="table-list_title">是否同意</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td class="table-list_title">确认意见</td>
+            <td colspan="5">
+              <textarea name="ff" cols="100" rows="2" readonly="readonly">&nbsp;</textarea>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"><img src="../../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table7,img1)" style="cursor: hand">申请人是否终止接入</td>
+            <td style="width:70px" >[未处理]</td>
+          </tr>
+        </table>
+        <table align="center" id="table7" class="table-table">
+          <tr>
+            <td class="table-list_title">确认人</td>
+            <td>&nbsp;</td>
+            <td class="table-list_title">确认时间</td>
+            <td>&nbsp;</td>
+            <td class="table-list_title">是否终止接入</td>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        <table width="100%" class="title_table1">
+          <tr>
+            <td colspan="9" align="left"><img src="../../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(table8,img1)" style="cursor: hand">业务系统管理员确认割接信息</td>
+            <td style="width:70px" >[未处理]</td>
+          </tr>
+        </table>
+        <table align="center" id="table8" class="table-table">
+          <tr>
+            <td class="table-list_title">确认人</td>
+            <td>&nbsp;</td>
+            <td class="table-list_title">确认时间</td>
+            <td>&nbsp;</td>
+            <td class="table-list_title">是否割接</td>
+            <td>&nbsp;</td>
+          </tr>
+          <tr>
+            <td  class="table-list_title">确认意见</td>
+            <td colspan="5">
+              <textarea name="textarea" cols="100" rows="2" readonly="readonly">&nbsp;</textarea>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+<script language="JavaScript"> 
+<!-- 
+for(var i=4;i<9;i++){
+	document.getElementById("table"+i).style.display="none";
+}
+//Init hide appo's form
+
+
+function hve_display(t_id,i_id){//显示隐藏程序 
+var t_id;//表格ID 
+var i_id;//图片ID 
+var on_img="2308.gif";//打开时图片 
+var off_img="2305.gif";//隐藏时图片 
+if (t_id.style.display == "none") {//如果为隐藏状态 
+t_id.style.display="";//切换为显示状态 
+i_id.src=on_img;}//换图 
+else{//否则 
+t_id.style.display="none";//切换为隐藏状态 
+i_id.src=off_img;}//换图 
+} 
+
+//--> 
+</script>
+</html>

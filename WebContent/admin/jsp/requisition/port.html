@@ -1,0 +1,41 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <title>业务系统申请表</title>
+  <link href="../../css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <table width="100%" align="center" class="table-list">
+    <tr>
+      <td bgcolor="#FFFFFF">
+       <table border="0" align="center" cellspacing="0" class="table-button">
+              <tr>
+			  <td></td>
+                <td width="40%"><iframe name="left" width="150" height="200" src="left.html"></iframe>
+				</td>
+                <td width="20%"><input onClick="javascript:left.rightToLeft()" type="button" value="<<--" name="addUsers" class="cancle">
+                  <br>
+                  <br>
+                  <input onClick="javascript:right.leftToRight();" type="button" value="-->>" name="removeUsers" class="cancle">                </td>
+                <td width="40%"> <iframe width="150" height="200" src="right.html" name="right"></iframe>
+				</td>
+				<td></td>
+              </tr>
+          </table>
+		  
+		  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="30%" class="pizhu"></td>
+          <td height="30" style="padding-right:100px;" class="table-button"><input type="button" value="提交" name="B333" class="input" onClick="window.returnValue=1;
+window.close();
+"
+>
+            <input type="button" value="返回" name="B333" class="input" onClick="window.close();"></td>
+        </tr>
+      </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+<script type="text/javascript">var Ptr=document.getElementsByTagName("tr");function recolor() {for (i=1;i<Ptr.length+1;i++) {Ptr[i-1].className = (i%2>0)?"t1":"t2";}}window.onload=recolor;for(var i=0;i<Ptr.length;i++) {Ptr[i].onmouseover=function(){this.tmpClass=this.className;this.className = "t3";};Ptr[i].onmouseout=function(){this.className=this.tmpClass;};}</script>

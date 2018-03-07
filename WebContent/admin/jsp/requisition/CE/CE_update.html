@@ -1,0 +1,111 @@
+<html>
+<head>
+  <title></title>
+  <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+  <!-- this link element includes the css definitions that describes the tab pane -->
+  <!--
+<link type="text/css" rel="stylesheet" href="tab.winclassic.css" />
+-->
+  <link id="webfx-tab-style-sheet" type="text/css" rel="stylesheet" href="../../../css/tab.webfx.css"/>
+  <!-- the id is not needed. It is used here to be able to change css file at runtime -->
+  <script type="text/javascript" src="../../../js/tabpane.js"></script>
+</head>
+<link href="../../../css/main.css" rel="stylesheet" type="text/css">
+  <link href="../../../css/grid.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="../../../js/grid.js"></script>
+<body>
+  <script language="javascript" type="text/javascript" src="../../../js/datepicker/WdatePicker.js"></script>
+  <link href="../../../js/datepicker/default/datepicker.css" rel="stylesheet" type="text/css">
+  <link href="../../../js/datepicker/whyGreen/datepicker.css" rel="stylesheet" type="text/css" disabled="disabled">
+  <script type="text/javascript">
+tp1 = new WebFXTabPane( document.getElementById( "tabPane1" ) );
+//tp1.setClassNameTag( "dynamic-tab-pane-control-luna" );
+//alert( 0 )
+</script>
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" class="table-location">
+    <tr>
+      <td height=25 bgcolor="#FFFFFF"><img src="../../../images/frame/web_icon01.gif" width="11" height="8" align="absmiddle"> 当前位置：CE申请表</td>
+    </tr>
+  </table>
+   
+  
+  
+  
+   
+          
+  <table width="100%" class="title_table1">
+    <tr>
+      <td colspan="9" align="left"><img src="../../../images/arrow1.gif" width="16" height="16" name="img1" onClick="hve_display(myTable1,img1)" style="cursor: hand"> 申请表基本信息 </td>
+    </tr>
+  </table>
+  <table align="center" class="table-form" id="myTable1">
+    <tr>
+      <td width="10%" class="table-list_title">申请单编号</td>
+      <td>IPNET2008041001</td>
+      <td width="10%" class="table-list_title">申请人</td>
+      <td>徐兵</td>
+    </tr>
+    <tr>
+      <td class="table-list_title">申请单类型</td>
+      <td>CE接入需求单</td>
+      <td class="table-list_title">申请人联系方式</td>
+      <td>15869365022</td>
+    </tr>
+    <tr>
+      <td class="table-list_title">申请单名称</td>
+      <td> <input name="textfield222" type="text" class="input"> <span class="red"> * </span> </td>
+      <td class="table-list_title">申请时间</td>
+      <td> <input name="text" type="text" class="Wdate" onFocus="new WdatePicker(this,'%Y-%M-%D',true)" value="2008-04-21"> </td>
+    </tr>
+    <tr>
+      <td class="table-list_title">紧急情况</td>
+      <td>
+        <select name="select" class="common-select">
+          <option selected>一般</option>
+          <option>紧急</option>
+        </select>
+      </td>
+      <td class="table-list_title">网络类型</td>
+      <td>
+        <select name="select" class="common-select">
+          <option selected>省网接入层</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td class="table-list_title">设备工期</td>
+      <td>
+        <input type="text"/>
+      </td>
+      <td class="table-list_title">设备入网时间</td>
+      <td> <input name="text1" type="text" class="Wdate" /> </td>
+    </tr>
+  </table>
+ 
+  
+  <div class="tab-pane" id="tabPane1">
+    <div class="tab-page" id="tabPage1">
+      <h2 class="tab">HAZHK-PS-SX-CE01-NE40E</h2>
+      <iframe src="../ceApply_add_temp_1.html" width="100%" height="300%" scrolling="auto" frameborder="0"></iframe>
+    </div>
+    <div class="tab-page" id="tabPage2">
+      <h2 class="tab">HAZHK-PS-SX-CE02-NE40E</h2>
+      <iframe src="../ceApply_add_temp.html" width="100%" height="300%" scrolling="auto" frameborder="0"></iframe>
+    </div>
+  </div>
+  <table width="100%" align="center" cellpadding="0" cellspacing="0">
+    <tr>
+      <td  colspan="11"></td>
+    </tr>
+  </table>
+  
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="30%" class="pizhu"></td>
+           <td height="30" style="padding-right:200px;" class="table-button"> <input type="button" value="提交" name="B333" class="input" onClick="location.href('../ceApply_list.html')"> <input type="button" value="重置" name="B332" class="input" onClick="location.href('#')"> <input type="button" value="添加CE设备" name="B333" class="long" onClick="location.href('CE_update.html')"> <input type="button" value="返回" name="B333" class="input" onClick="location.href('../ceApply_list.html')"> </td>
+          </tr>
+        </table>
+  
+      
+</body>
+</html>
