@@ -36,7 +36,10 @@ public class AdministratorManageController {
      * 添加用户
      */
     @RequestMapping(value = "/add")
-    public ModelAndView addAdministrator(HttpServletRequest request, @RequestParam("name") String name, @RequestParam("loginname") String loginName, @RequestParam("password") String passWord, @RequestParam("phonenumber") String phoneNumber, @RequestParam("sex") String sex) {
+    public ModelAndView addAdministrator(
+            HttpServletRequest request, @RequestParam("name") String name,
+            @RequestParam("loginname") String loginName, @RequestParam("password") String passWord,
+            @RequestParam("phonenumber") String phoneNumber, @RequestParam("sex") String sex) {
         String[] roleid = request.getParameterValues("role");
         Role role = null;
         AdministratorAndRole adminAndRole = null;
@@ -102,7 +105,10 @@ public class AdministratorManageController {
      * 根据编号修改用户信息
      */
     @RequestMapping(value = "/updatebyid")
-    public ModelAndView updateAdministratorById(HttpServletRequest request, @RequestParam("id") int id, @RequestParam("name") String name, @RequestParam("loginname") String loginName, @RequestParam("password") String password, @RequestParam("sex") String sex, @RequestParam("phonenumber") String phoneNumber) {
+    public ModelAndView updateAdministratorById(
+            HttpServletRequest request, @RequestParam("id") int id, @RequestParam("name") String name,
+            @RequestParam("loginname") String loginName, @RequestParam("password") String password,
+            @RequestParam("sex") String sex, @RequestParam("phonenumber") String phoneNumber) {
         List<Integer> adminAndRoleIds = administratorManageServiceImpl.findAdministratorAndRoleId(id);
         AdministratorAndRole adminAndRole = null;
         Administrator admin = null;

@@ -11,29 +11,29 @@
 	http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd">
 
     <!-- 自动扫描com.smart.web 包下的@Controller标注的类控制器类 -->
-    <context:component-scan base-package="fun.peri.controller"></context:component-scan>
+    <context:component-scan base-package="fun.peri.controller"/>
 
     <!-- 注册拦截器 -->
     <mvc:interceptors>
         <mvc:interceptor>
-            <mvc:mapping path="/**/admin/**"></mvc:mapping>
-            <mvc:mapping path="*.do"></mvc:mapping>
-            <bean class="fun.peri.interceptor.LoginInterceptor"></bean>
+            <mvc:mapping path="/**/admin/**"/>
+            <mvc:mapping path="*.do"/>
+            <bean class="fun.peri.interceptor.LoginInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
     <!-- 对模型视图名称的解析，在请求时模型视图名称添加前后缀 -->
     <!-- 定义ViewResolver组件, 实现根据视图标识获取JSP响应 -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- View中用到的相关技术 -->
-        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <!-- 后缀 -->
-        <property name="suffix" value=".jsp"></property>
+        <property name="suffix" value=".jsp"/>
         <!-- 前缀 -->
-        <property name="prefix" value="/"></property>
+        <property name="prefix" value="/"/>
     </bean>
     <!-- 对模型视图名称的解析，在请求时模型视图名称添加前后缀 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-          p:prefix="/admin/jsp/viewManeger/"
+          p:prefix="/admin/jsp/viewManager/"
           p:suffix=".jsp"/>
 
     <bean id="multipartResolver"

@@ -77,8 +77,6 @@ public interface IViewSpaceService {
 
     /**
      * 更改某个景点对象
-     *
-     * @param pointId
      */
     public void updateViewPoint(ViewPoint vp);
 
@@ -95,7 +93,7 @@ public interface IViewSpaceService {
     public List<ViewSpace> find(String hql, Object[] param, Integer page, Integer rows);
 
     //总页数
-    public List<Object> count(String param);
+    public List<Long> count(String param);
 
     public List<ViewSpace> queryWebViewSpace(int currentPage, int pageSize);
 

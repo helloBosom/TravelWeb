@@ -89,20 +89,17 @@ public class BarChart3DDemo {
                 plot.getDomainAxis().setLowerMargin(margin);
                 plot.getDomainAxis().setUpperMargin(margin);
             }
-
             ChartPanel chartPanel = new ChartPanel(chart);
             chartPanel.setPopupMenu(null);
             // 服务器路径
             String url = request.getRealPath("/chartimages");
             // 保存图表
-
             ChartUtilities.saveChartAsPNG(new File(url, "BarChart3D.png"), chart, 500, 400);
             request.setAttribute("barchart", "BarChart3D.png");
             return;
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return;
     }
 
     /**
@@ -151,7 +148,6 @@ public class BarChart3DDemo {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return;
     }
 
     /**
